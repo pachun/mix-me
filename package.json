@@ -12,7 +12,7 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "tsc": "tsc",
-    "lint": "eslint '**/*.{ts,tsx}'",
+    "lint": "eslint '**/*.{ts,tsx}' --max-warnings 0",
     "test": "jest --collectCoverage --errorOnDeprecated"
   },
   "dependencies": {

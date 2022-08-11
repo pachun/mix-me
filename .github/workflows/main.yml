@@ -1,0 +1,59 @@
+name: Main
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    name: Lint
+    steps:
+      - name: Checkout Mix Me
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14.x
+          cache: "yarn"
+      - name: Install Dependencies
+        run: yarn install
+      - name: Lint
+        run: yarn lint
+  type-check:
+    runs-on: ubuntu-latest
+    name: Type Check
+    steps:
+      - name: Checkout Mix Me
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14.x
+          cache: "yarn"
+      - name: Install Dependencies
+        run: yarn install
+      - name: Type Check
+        run: yarn tsc
+  test:
+    runs-on: ubuntu-latest
+    name: Test
+    steps:
+      - name: Checkout Mix Me
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14.x
+          cache: "yarn"
+      - name: Install Dependencies
+        run: yarn install
+      - name: Test
+        run: yarn test
+      - name: Save Coverage Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: Coverage Report
+          path: coverage/lcov-report
