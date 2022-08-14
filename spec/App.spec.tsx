@@ -1,56 +1,73 @@
-import { render } from "@testing-library/react-native"
+import {
+  RenderResult,
+  fireEvent,
+  render,
+  waitFor,
+  within,
+} from "@testing-library/react-native"
 import App from "App"
+import { ginAndTonicRecipe, pinkPantherRecipe } from "recipes"
+import drinkListItemFor from "./componentHelpers/drinkListItemFor"
+import drinkRecipeFor from "./componentHelpers/drinkRecipeFor"
 
-const minimumImageDimensions = 50
+describe("The Mix Me App", () => {
+  it("shows a list of drink names and photos", () => {
+    const app = render(<App />)
 
-it("shows a gin and tonic recipe", () => {
-  const app = render(<App />)
+    expect(
+      drinkListItemFor({
+        drinkRecipe: ginAndTonicRecipe,
+        inComponent: app,
+      }),
+    ).toBeTruthy()
 
-  const ginAndTonicNameLabel = app.getByText("Gin & Tonic")
-
-  expect(ginAndTonicNameLabel).toBeTruthy()
-
-  const ginAndTonicImage = app.queryByRole("image")
-
-  expect(ginAndTonicImage).toBeTruthy()
-  expect(ginAndTonicImage).toHaveProp("source", {
-    uri: "https://theforkedspoon.com/wp-content/uploads/2018/06/gin-and-tonic-500x375.jpg",
+    expect(
+      drinkListItemFor({
+        drinkRecipe: pinkPantherRecipe,
+        inComponent: app,
+      }),
+    ).toBeTruthy()
   })
 
-  const ginAndTonicImageWidth = ginAndTonicImage.props.style.width
-  const ginAndTonicImageHeight = ginAndTonicImage.props.style.height
+  describe("when a drink in the drink list is tapped", () => {
+    it("shows the drink's recipe", async () => {
+      const app = render(<App />)
 
-  expect(ginAndTonicImageWidth).toBeGreaterThanOrEqual(minimumImageDimensions)
-  expect(ginAndTonicImageHeight).toBeGreaterThanOrEqual(minimumImageDimensions)
-  expect(ginAndTonicImageWidth).toEqual(ginAndTonicImageHeight)
+      fireEvent.press(app.getByText(ginAndTonicRecipe.name))
 
-  const ginAndTonicIngredients = [
-    "Hendrix Gin",
-    "Fever Tree Tonic",
-    "Lemon",
-    "Lime",
-    "Cucumber",
-    "Ice",
-  ]
+      const drinkRecipeSection = within(
+        app.getByTestId("Drink Recipe"),
+      ) as RenderResult
 
-  ginAndTonicIngredients.forEach((ginAndTonicIngredient) => {
-    const ingredientLabel = app.getByText(ginAndTonicIngredient)
+      await waitFor(() => drinkRecipeSection.getByText(ginAndTonicRecipe.name))
 
-    expect(ingredientLabel).toBeTruthy()
-  })
+      expect(
+        drinkRecipeFor({
+          drinkRecipe: ginAndTonicRecipe,
+          inComponent: drinkRecipeSection,
+        }),
+      ).toBeTruthy()
+    })
 
-  const stepsToMakeAGinAndTonic = [
-    "1. Put one square cube into the glass",
-    "2. Pour two shots of cold Hendricks Gin into the glass",
-    "3. Add two shots of cold Fever Tree Tonic into the glass",
-    "4. Squeeze one lemon wedge over the glass",
-    "5. Squeeze one lime wedge over the glass",
-    "6. Garnish glass with cucumber slice",
-  ]
+    it("shows a back button which returns to the drink list when tapped", async () => {
+      const app = render(<App />)
 
-  stepsToMakeAGinAndTonic.forEach((instruction) => {
-    const instructionLabel = app.getByText(instruction)
+      fireEvent.press(app.getByText(ginAndTonicRecipe.name))
 
-    expect(instructionLabel).toBeTruthy()
+      const drinkRecipeSection = within(
+        app.getByTestId("Drink Recipe"),
+      ) as RenderResult
+
+      await waitFor(() => drinkRecipeSection.getByText(ginAndTonicRecipe.name))
+
+      fireEvent.press(app.getByText("Back"))
+
+      expect(
+        drinkListItemFor({
+          drinkRecipe: ginAndTonicRecipe,
+          inComponent: app,
+        }),
+      ).toBeTruthy()
+    })
   })
 })
