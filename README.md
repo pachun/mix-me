@@ -50,3 +50,9 @@ yarn tsc
 ```sh
 open coverage/lcov-report/index.html
 ```
+
+### Build & Deploy
+
+We use [EAS](https://docs.expo.dev/eas/).
+
+Merging to `main` deploys any updates to testers.
