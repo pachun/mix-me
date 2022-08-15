@@ -49,7 +49,7 @@ describe("The Mix Me App", () => {
       ).toBeTruthy()
     })
 
-    it("shows a back button which returns to the drink list when tapped", async () => {
+    it("shows a back button", async () => {
       const app = render(<App />)
 
       fireEvent.press(app.getByText(ginAndTonicRecipe.name))
