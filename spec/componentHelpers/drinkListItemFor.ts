@@ -20,11 +20,11 @@ const drinkListItemFor = ({
 
   expect(drinkImage).toBeTruthy()
 
-  const ginAndTonicImageWidth = drinkImage.props.style.width
-  const ginAndTonicImageHeight = drinkImage.props.style.height
+  const drinkImageWidth = drinkImage.props.style.width
+  const drinkImageHeight = drinkImage.props.style.height
 
-  expect(ginAndTonicImageWidth).toEqual(50)
-  expect(ginAndTonicImageHeight).toEqual(50)
+  expect(drinkImageWidth).toEqual(50)
+  expect(drinkImageHeight).toEqual(50)
 
   return true
 }
