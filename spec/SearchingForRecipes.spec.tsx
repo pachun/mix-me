@@ -25,8 +25,26 @@ const fakeDrinkRecipes: DrinkRecipe[] = [
 
 jest.mock("drinkRecipes", () => fakeDrinkRecipes)
 
-describe("The Mix Me App", () => {
-  it("shows a search bar that filters recipes by searched ingredients", async () => {
+describe("The Mix Me App search bar", () => {
+  it("filters recipes by searched ingredients", async () => {
+    const app = render(<App />)
+
+    expect(app.queryByText("Screw Driver")).toBeTruthy()
+    expect(app.queryByText("Mimosa")).toBeTruthy()
+    expect(app.queryByText("Gin & Tonic")).toBeTruthy()
+
+    fireEvent(
+      app.getByPlaceholderText("Search by Ingredient"),
+      "onChangeText",
+      "orange juice",
+    )
+
+    expect(app.queryByText("Screw Driver")).toBeTruthy()
+    expect(app.queryByText("Mimosa")).toBeTruthy()
+    expect(app.queryByText("Gin & Tonic")).toBeNull()
+  })
+
+  it("does not show results matched by letters in the middle of an ingredient", () => {
     const app = render(<App />)
 
     expect(app.queryByText("Screw Driver")).toBeTruthy()
@@ -41,16 +59,10 @@ describe("The Mix Me App", () => {
 
     expect(app.queryByText("Screw Driver")).toBeTruthy()
     expect(app.queryByText("Mimosa")).toBeTruthy()
-    expect(app.queryByText("Gin & Tonic")).toBeNull()
 
-    fireEvent(
-      app.getByPlaceholderText("Search by Ingredient"),
-      "onChangeText",
-      "orange juice",
-    )
-
-    expect(app.queryByText("Screw Driver")).toBeTruthy()
-    expect(app.queryByText("Mimosa")).toBeTruthy()
-    expect(app.queryByText("Gin & Tonic")).toBeNull()
+    const itDoesNotMatchTheSearchOnTheLetterOInTheWordTonic = () => {
+      expect(app.queryByText("Gin & Tonic")).toBeNull()
+    }
+    itDoesNotMatchTheSearchOnTheLetterOInTheWordTonic()
   })
 })
