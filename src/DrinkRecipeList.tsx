@@ -24,7 +24,9 @@ const DrinkRecipeList = ({
       const drinkRecipesFilteredBySearchedIngredient = drinkRecipes.filter(
         (drinkRecipe) =>
           drinkRecipe.ingredients.some((ingredient) =>
-            ingredient.toLowerCase().includes(searchedIngredient.toLowerCase()),
+            ingredient
+              .toLowerCase()
+              .startsWith(searchedIngredient.toLowerCase()),
           ),
       )
 

@@ -36,6 +36,16 @@ describe("The Mix Me App", () => {
     fireEvent(
       app.getByPlaceholderText("Search by Ingredient"),
       "onChangeText",
+      "o",
+    )
+
+    expect(app.queryByText("Screw Driver")).toBeTruthy()
+    expect(app.queryByText("Mimosa")).toBeTruthy()
+    expect(app.queryByText("Gin & Tonic")).toBeNull()
+
+    fireEvent(
+      app.getByPlaceholderText("Search by Ingredient"),
+      "onChangeText",
       "orange juice",
     )
 
