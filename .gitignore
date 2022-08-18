@@ -14,6 +14,3 @@ web-build/
 .DS_Store
 
 yarn-error.log
-
-# generated coverage reports
-coverage
