@@ -50,16 +50,9 @@
   },
   "jest": {
     "preset": "jest-expo",
-    "moduleDirectories": [
-      "node_modules",
-      "src"
-    ],
-    "setupFilesAfterEnv": [
-      "<rootDir>/spec/support/setup-jest.ts"
-    ],
-    "collectCoverageFrom": [
-      "src/**/*.{ts,tsx}"
-    ],
+    "moduleDirectories": ["node_modules", "src"],
+    "setupFilesAfterEnv": ["<rootDir>/spec/support/setup-jest.ts"],
+    "collectCoverageFrom": ["src/**/*.{ts,tsx}", "!src/drinkRecipes.ts"],
     "coverageThreshold": {
       "global": {
         "branches": 100,
