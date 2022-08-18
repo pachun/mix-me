@@ -15,31 +15,54 @@ const DrinkRecipeList = ({
     navigation.navigate("Drink Recipe", { drinkRecipe })
   }
 
-  const [searchedIngredient, setSearchedIngredient] = useState("")
+  const [searchedIngredientText, setSearchedIngredientText] = useState("")
 
   const displayedDrinkRecipes = useMemo(() => {
-    if (searchedIngredient === "") {
-      return drinkRecipes
-    } else {
-      const drinkRecipesFilteredBySearchedIngredient = drinkRecipes.filter(
-        (drinkRecipe) =>
-          drinkRecipe.ingredients.some((ingredient) =>
-            ingredient
-              .toLowerCase()
-              .startsWith(searchedIngredient.toLowerCase()),
-          ),
-      )
+    const allDrinkRecipes = drinkRecipes
 
-      return drinkRecipesFilteredBySearchedIngredient
+    if (searchedIngredientText.length === 0) {
+      return allDrinkRecipes
     }
-  }, [searchedIngredient])
+
+    const searchedIngredients = searchedIngredientText.split(",")
+
+    const lowerCasedPartiallyTypedIngredient = searchedIngredients[
+      searchedIngredients.length - 1
+    ]
+      .toLowerCase()
+      .trim()
+    const lowerCasedFullyTypedIngredients = searchedIngredients
+      .slice(0, searchedIngredients.length - 1)
+      .map((fullyTypedIngredient) => fullyTypedIngredient.toLowerCase().trim())
+
+    return allDrinkRecipes.filter((drinkRecipe) => {
+      const drinkRecipeIncludesAFullyTypedIngredient =
+        drinkRecipe.ingredients.some((drinkRecipeIngredient) =>
+          lowerCasedFullyTypedIngredients.includes(
+            drinkRecipeIngredient.toLowerCase(),
+          ),
+        )
+      const drinkRecipeIncludesAPartiallyTypedIngredient =
+        Boolean(lowerCasedPartiallyTypedIngredient) &&
+        drinkRecipe.ingredients.some((drinkRecipeIngredient) =>
+          drinkRecipeIngredient
+            .toLowerCase()
+            .startsWith(lowerCasedPartiallyTypedIngredient),
+        )
+
+      return (
+        drinkRecipeIncludesAFullyTypedIngredient ||
+        drinkRecipeIncludesAPartiallyTypedIngredient
+      )
+    })
+  }, [searchedIngredientText])
 
   return (
     <>
       <TextInput
         placeholder="Search by Ingredient"
-        onChangeText={setSearchedIngredient}
-        value={searchedIngredient}
+        onChangeText={setSearchedIngredientText}
+        value={searchedIngredientText}
       />
       <FlatList
         data={displayedDrinkRecipes}

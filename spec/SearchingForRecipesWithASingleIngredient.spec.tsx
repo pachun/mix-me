@@ -25,8 +25,8 @@ const fakeDrinkRecipes: DrinkRecipe[] = [
 
 jest.mock("drinkRecipes", () => fakeDrinkRecipes)
 
-describe("The Mix Me App search bar", () => {
-  it("filters recipes by searched ingredients", async () => {
+describe("Searching for recipes with a single ingredient", () => {
+  it("hides recipes that do not match the search", async () => {
     const app = render(<App />)
 
     expect(app.queryByText("Screw Driver")).toBeTruthy()
@@ -44,7 +44,7 @@ describe("The Mix Me App search bar", () => {
     expect(app.queryByText("Gin & Tonic")).toBeNull()
   })
 
-  it("does not show results matched by letters in the middle of an ingredient", () => {
+  it("hides recipes that match the search on an ingredient letter in the middle of an ingredient", () => {
     const app = render(<App />)
 
     expect(app.queryByText("Screw Driver")).toBeTruthy()

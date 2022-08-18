@@ -11,7 +11,7 @@ import drinkListItemFor from "./componentHelpers/drinkListItemFor"
 import drinkRecipeFor from "./componentHelpers/drinkRecipeFor"
 import { DrinkRecipe } from "types/DrinkRecipe"
 
-describe("The Mix Me App", () => {
+describe("Opening the Mix Me App", () => {
   it("shows a list of drink names and photos", () => {
     const app = render(<App />)
 
