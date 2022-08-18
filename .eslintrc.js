@@ -33,5 +33,6 @@ module.exports = {
     "@typescript-eslint/switch-exhaustiveness-check": "error",
     "@typescript-eslint/ban-ts-comment": 0,
     "@typescript-eslint/no-empty-function": 0,
+    "@typescript-eslint/consistent-type-imports": "error",
   },
 }

@@ -37,9 +37,9 @@ jobs:
       - name: Type Check
         run: yarn tsc
 
-  test:
+  check-prettier:
     runs-on: ubuntu-latest
-    name: Test
+    name: Check Prettier
     steps:
       - name: Checkout Mix Me
         uses: actions/checkout@v3
@@ -50,17 +50,12 @@ jobs:
           cache: "yarn"
       - name: Install Dependencies
         run: yarn install
-      - name: Test
-        run: yarn test
-      - name: Save Coverage Report
-        uses: actions/upload-artifact@v3
-        with:
-          name: Coverage Report
-          path: coverage/lcov-report
+      - name: Check Prettier
+        run: yarn prettier:check
 
   # https://docs.expo.dev/eas-update/github-actions/
   deploy:
-    needs: [lint, type-check, test]
+    needs: [lint, type-check, check-prettier]
     name: Deploy
     runs-on: ubuntu-latest
     steps:

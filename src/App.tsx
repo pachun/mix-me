@@ -2,11 +2,13 @@ import { DefaultTheme, NavigationContainer } from "@react-navigation/native"
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context"
 
-import DrinkRecipeList from "DrinkRecipeList"
-import DrinkRecipe from "DrinkRecipe"
-import { Screens } from "types/Screens"
+import DrinkRecipes from "screens/DrinkRecipes"
+import DrinkRecipe from "screens/DrinkRecipe"
 
-const Stack = createNativeStackNavigator<Screens>()
+import type { Navigation } from "types/Navigation"
+
+const Stack = createNativeStackNavigator<Navigation>()
+
 const NavigationTheme = {
   ...DefaultTheme,
   colors: {
@@ -20,7 +22,7 @@ const App = () => (
     <SafeAreaView style={{ flex: 1 }}>
       <NavigationContainer theme={NavigationTheme}>
         <Stack.Navigator screenOptions={{ headerShown: false }}>
-          <Stack.Screen name="Drink Recipe List" component={DrinkRecipeList} />
+          <Stack.Screen name="Drink Recipes" component={DrinkRecipes} />
           <Stack.Screen name="Drink Recipe" component={DrinkRecipe} />
         </Stack.Navigator>
       </NavigationContainer>
