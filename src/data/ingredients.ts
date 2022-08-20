@@ -40,6 +40,8 @@ const ingredients = [
   "Dry Vermouth",
   "Olive Brine",
   "Green Olive",
+  "Dark Rum",
+  "Ginger Beer",
 ] as const
 
 export default ingredients

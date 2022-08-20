@@ -42,6 +42,8 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Dry Vermouth": ["Vermouth"],
   "Olive Brine": ["Olive"],
   "Green Olive": ["Olive"],
+  "Dark Rum": ["Rum"],
+  "Ginger Beer": [],
 }
 
 export default ingredientToIngredientAliases
