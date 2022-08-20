@@ -39,15 +39,16 @@ const MeasuredIngredients = ({
       {measuredIngredients.map((measuredIngredient, position) => {
         const displayedAmount = decimalToFraction(measuredIngredient.unitAmount)
 
+        const ozLabel = `${displayedAmount} oz ${measuredIngredient.ingredient}`
+        const otherLabel = `${pluralize(
+          measuredIngredient.unit,
+          measuredIngredient.unitAmount,
+          true,
+        )} ${measuredIngredient.ingredient}`
+
         return (
           <Text key={position}>
-            {measuredIngredient.unit === "oz"
-              ? `${displayedAmount} oz ${measuredIngredient.ingredient}`
-              : pluralize(
-                  measuredIngredient.unit,
-                  measuredIngredient.unitAmount,
-                  true,
-                )}{" "}
+            {measuredIngredient.unit === "oz" ? ozLabel : otherLabel}
             {measuredIngredient.alternates.length > 0
               ? ` (or ${measuredIngredient.alternates.join(", ")})`
               : ""}
