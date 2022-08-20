@@ -27,7 +27,7 @@ const vesperMartini: DrinkRecipe = {
       ingredient: "Lillet Blanc Aperitif",
       unit: "oz",
       unitAmount: 0.5,
-      alternates: ["Half-and-Half"],
+      alternates: [],
     },
   ],
   numberedIngredients: [],
