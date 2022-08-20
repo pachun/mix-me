@@ -34,8 +34,8 @@ const drinkRecipeIngredients = (drinkRecipe: DrinkRecipe): Ingredient[] => [
   ...drinkRecipe.numberedIngredients.map(
     numberedIngredient => numberedIngredient.ingredient,
   ),
-  ...drinkRecipe.preparedIngredients.map(
-    preparedIngredient => preparedIngredient.ingredient,
+  ...drinkRecipe.portionlessIngredients.map(
+    portionlessIngredient => portionlessIngredient.ingredient,
   ),
   ...drinkRecipe.garnishIngredients.map(
     garnishIngredient => garnishIngredient.ingredient,

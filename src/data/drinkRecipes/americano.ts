@@ -24,16 +24,16 @@ const americano: DrinkRecipe = {
     },
   ],
   numberedIngredients: [],
-  preparedIngredients: [
+  portionlessIngredients: [
     {
-      type: DrinkRecipeIngredientType.Prepared,
+      type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Soda Water",
       prefix: "Chilled",
     },
   ],
   garnishIngredients: [
     {
-      type: DrinkRecipeIngredientType.Prepared,
+      type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Orange",
       suffix: "Twist",
     },

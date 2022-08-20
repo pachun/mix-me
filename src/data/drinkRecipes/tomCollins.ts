@@ -31,25 +31,25 @@ const tomCollins: DrinkRecipe = {
     },
   ],
   numberedIngredients: [],
-  preparedIngredients: [
+  portionlessIngredients: [
     {
-      type: DrinkRecipeIngredientType.Prepared,
+      type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Club Soda",
     },
   ],
   garnishIngredients: [
     {
-      type: DrinkRecipeIngredientType.Prepared,
+      type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Lemon",
       suffix: "Wheel",
     },
     {
-      type: DrinkRecipeIngredientType.Prepared,
+      type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Maraschino Cherry",
     },
   ],
   stepsToMake: [
-    "Add $MI1, %MI2 and %MI3 to a Collins glass",
+    "Add %MI1, %MI2 and %MI3 to a Collins glass",
     "Fill glass with ice",
     "Top with %PI1 and stir",
     "Garnish with %GI1 and %GI2",

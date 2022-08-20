@@ -1,7 +1,7 @@
 import { Text } from "react-native"
 import MeasuredIngredients from "../MeasuredIngredients"
 import NumberedIngredients from "../NumberedIngredients"
-import PreparedIngredients from "../PreparedIngredients"
+import PortionlessIngredients from "../PortionlessIngredients"
 
 import { DrinkRecipeIngredientType } from "types/DrinkRecipe"
 import type { GarnishDrinkRecipeIngredient } from "types/DrinkRecipe"
@@ -37,12 +37,12 @@ const GarnishIngredients = ({
               </Text>
             )
             break
-          case DrinkRecipeIngredientType.Prepared:
+          case DrinkRecipeIngredientType.Portionless:
             return (
               <Text key={garnishIngredient.ingredient}>
                 Garnish:{" "}
-                <PreparedIngredients
-                  preparedIngredients={[garnishIngredient]}
+                <PortionlessIngredients
+                  portionlessIngredients={[garnishIngredient]}
                 />
               </Text>
             )

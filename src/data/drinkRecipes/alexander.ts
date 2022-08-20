@@ -37,10 +37,10 @@ const alexander: DrinkRecipe = {
       ingredient: "Egg White",
     },
   ],
-  preparedIngredients: [],
+  portionlessIngredients: [],
   garnishIngredients: [
     {
-      type: DrinkRecipeIngredientType.Prepared,
+      type: DrinkRecipeIngredientType.Portionless,
       prefix: "Grated",
       ingredient: "Nutmeg",
     },

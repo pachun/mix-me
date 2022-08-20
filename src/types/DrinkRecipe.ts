@@ -5,7 +5,7 @@ export interface DrinkRecipe {
   imageUrl: string
   measuredIngredients: MeasuredDrinkRecipeIngredient[]
   numberedIngredients: NumberedDrinkRecipeIngredient[]
-  preparedIngredients: PreparedDrinkRecipeIngredient[]
+  portionlessIngredients: PortionlessDrinkRecipeIngredient[]
   garnishIngredients: GarnishDrinkRecipeIngredient[]
   stepsToMake: string[]
 }
@@ -13,7 +13,7 @@ export interface DrinkRecipe {
 export enum DrinkRecipeIngredientType {
   Measured = "Measured Ingredient",
   Numbered = "Numbered Ingredient",
-  Prepared = "Prepared Ingredient",
+  Portionless = "Portionless Ingredient",
 }
 
 export interface MeasuredDrinkRecipeIngredient {
@@ -30,8 +30,8 @@ export interface NumberedDrinkRecipeIngredient {
   amount: number
 }
 
-export interface PreparedDrinkRecipeIngredient {
-  type: DrinkRecipeIngredientType.Prepared
+export interface PortionlessDrinkRecipeIngredient {
+  type: DrinkRecipeIngredientType.Portionless
   ingredient: Ingredient
   prefix?: string
   suffix?: string
@@ -40,4 +40,4 @@ export interface PreparedDrinkRecipeIngredient {
 export type GarnishDrinkRecipeIngredient =
   | MeasuredDrinkRecipeIngredient
   | NumberedDrinkRecipeIngredient
-  | PreparedDrinkRecipeIngredient
+  | PortionlessDrinkRecipeIngredient
