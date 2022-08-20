@@ -51,17 +51,19 @@ const ladyInBlue: DrinkRecipe = {
       ingredient: "Blue Curacao",
     },
   ],
-  garnishIngredient: {
-    type: DrinkRecipeIngredientType.Numbered,
-    ingredient: "Edible Flower Petal",
-    amount: 5,
-  },
+  garnishIngredients: [
+    {
+      type: DrinkRecipeIngredientType.Numbered,
+      ingredient: "Edible Flower Petal",
+      amount: 5,
+    },
+  ],
   stepsToMake: [
     "Add %MI1, %MI2, %MI3, %MI4 and %MI5 to a shaker with ice",
     "Shake until well chilled",
     "Double strain into a coupe glass",
     "Pour a slip of %PI1 down the side of the glass so that it layers on the bottom",
-    "Garnish with %G",
+    "Garnish with %GI1",
   ],
 }
 

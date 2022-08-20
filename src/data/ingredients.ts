@@ -16,6 +16,10 @@ const ingredients = [
   "Blue Curacao",
   "Edible Flower Petal",
   "Orange Flower Water",
+  "Club Soda",
+  "Lemon",
+  "Maraschino Cherry",
+  "London Dry Gin",
 ] as const
 
 export default ingredients

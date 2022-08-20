@@ -17,7 +17,7 @@ const NumberedIngredients = ({
           {pluralize(
             numberedIngredient.ingredient,
             numberedIngredient.amount,
-            true,
+            numberedIngredient.amount > 1,
           )}
         </Text>
       ))}

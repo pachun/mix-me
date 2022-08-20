@@ -15,6 +15,9 @@ const ingredientAliases = [
   "Edible Flower",
   "Flower Petal",
   "Flower Water",
+  "Soda Water",
+  "Maraschino",
+  "Cherry",
 ] as const
 
 export default ingredientAliases

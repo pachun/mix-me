@@ -38,11 +38,13 @@ const alexander: DrinkRecipe = {
     },
   ],
   preparedIngredients: [],
-  garnishIngredient: {
-    type: DrinkRecipeIngredientType.Prepared,
-    prefix: "Grated",
-    ingredient: "Nutmeg",
-  },
+  garnishIngredients: [
+    {
+      type: DrinkRecipeIngredientType.Prepared,
+      prefix: "Grated",
+      ingredient: "Nutmeg",
+    },
+  ],
   stepsToMake: [
     "Add %MI1, %MI2, %MI3 and %NI1 to a shaker with ice",
     "Shake until well-chilled",
@@ -50,7 +52,7 @@ const alexander: DrinkRecipe = {
     "Pour mix back into shaker",
     "Dry shake (without ice)",
     "Fine strain into chilled coupe glass",
-    "Garnish with light dusting of %G",
+    "Garnish with light dusting of %GI1",
   ],
 }
 

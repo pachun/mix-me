@@ -31,16 +31,18 @@ const americano: DrinkRecipe = {
       prefix: "Chilled",
     },
   ],
-  garnishIngredient: {
-    type: DrinkRecipeIngredientType.Prepared,
-    ingredient: "Orange",
-    suffix: "Twist",
-  },
+  garnishIngredients: [
+    {
+      type: DrinkRecipeIngredientType.Prepared,
+      ingredient: "Orange",
+      suffix: "Twist",
+    },
+  ],
   stepsToMake: [
     "Fill highball glass with ice",
     "Add %MI1 and %MI2 to highball glass",
     "Gently stir %PI1 into highball glass",
-    "Garnish with %G",
+    "Garnish with %GI1",
   ],
 }
 

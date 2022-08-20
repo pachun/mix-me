@@ -18,6 +18,10 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Blue Curacao": ["Curacao"],
   "Edible Flower Petal": ["Edible Flower", "Flower Petal"],
   "Orange Flower Water": ["Flower Water"],
+  "Club Soda": ["Sparkling Water", "Seltzer", "Soda Water", "Fizzy Water"],
+  "Lemon": [],
+  "Maraschino Cherry": ["Maraschino", "Cherry"],
+  "London Dry Gin": ["Gin"],
 }
 
 export default ingredientToIngredientAliases

@@ -5,7 +5,7 @@ import type { DrinkRecipe as DrinkRecipeType } from "types/DrinkRecipe"
 import MeasuredIngredients from "./MeasuredIngredients"
 import NumberedIngredients from "./NumberedIngredients"
 import PreparedIngredients from "./PreparedIngredients"
-import GarnishIngredient from "./GarnishIngredient"
+import GarnishIngredients from "./GarnishIngredients"
 import StepsToMake from "./StepsToMake"
 
 interface DrinkRecipeProps {
@@ -28,7 +28,7 @@ const DrinkRecipe = ({ drinkRecipe }: DrinkRecipeProps) => (
     <PreparedIngredients
       preparedIngredients={drinkRecipe.preparedIngredients}
     />
-    <GarnishIngredient garnishIngredient={drinkRecipe.garnishIngredient} />
+    <GarnishIngredients garnishIngredients={drinkRecipe.garnishIngredients} />
     <StepsToMake drinkRecipe={drinkRecipe} />
   </View>
 )

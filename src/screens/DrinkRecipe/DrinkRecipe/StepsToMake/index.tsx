@@ -24,7 +24,12 @@ const formatMeasuredIngredient = (
 
 const formatNumberedIngredient = (
   numberedIngredient: NumberedDrinkRecipeIngredient,
-) => pluralize(numberedIngredient.ingredient, numberedIngredient.amount, true)
+) =>
+  pluralize(
+    numberedIngredient.ingredient,
+    numberedIngredient.amount,
+    numberedIngredient.amount > 1,
+  )
 
 const formatPreparedIngredient = (
   preparedIngredient: PreparedDrinkRecipeIngredient,
@@ -88,14 +93,18 @@ const StepsToMake = ({ drinkRecipe }: StepsToMakeProps) => {
         formatPreparedIngredient(preparedIngredient),
       ],
     )
+    const garnishIngredientSubstitutions = drinkRecipe.garnishIngredients.map(
+      (garnishIngredient, position) => [
+        `%GI${position + 1}`,
+        formatGarnishIngredient(garnishIngredient),
+      ],
+    )
 
     return [
       ...measuredIngredientSubstitutions,
       ...numberedIngredientSubstitutions,
       ...preparedIngredientSubstitutions,
-      ...(drinkRecipe.garnishIngredient
-        ? [["%G", formatGarnishIngredient(drinkRecipe.garnishIngredient)]]
-        : []),
+      ...garnishIngredientSubstitutions,
     ]
   }, [drinkRecipe])
 

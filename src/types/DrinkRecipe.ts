@@ -6,7 +6,7 @@ export interface DrinkRecipe {
   measuredIngredients: MeasuredDrinkRecipeIngredient[]
   numberedIngredients: NumberedDrinkRecipeIngredient[]
   preparedIngredients: PreparedDrinkRecipeIngredient[]
-  garnishIngredient?: GarnishDrinkRecipeIngredient
+  garnishIngredients: GarnishDrinkRecipeIngredient[]
   stepsToMake: string[]
 }
 

@@ -21,7 +21,6 @@ const MeasuredIngredients = ({
                 measuredIngredient.unitAmount,
                 true,
               )}{" "}
-          {measuredIngredient.ingredient}
           {measuredIngredient.alternates.length > 0
             ? ` (or ${measuredIngredient.alternates.join(", ")})`
             : ""}
