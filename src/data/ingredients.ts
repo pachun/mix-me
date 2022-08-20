@@ -30,6 +30,10 @@ const ingredients = [
   "Cucumber",
   "Mint",
   "Strawberry",
+  "Tequila",
+  "Grapefruit Soda",
+  "Lime",
+  "Salt",
 ] as const
 
 export default ingredients

@@ -32,6 +32,10 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Cucumber": [],
   "Mint": [],
   "Strawberry": [],
+  "Tequila": [],
+  "Grapefruit Soda": [],
+  "Lime": [],
+  "Salt": [],
 }
 
 export default ingredientToIngredientAliases
