@@ -22,6 +22,8 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Lemon": [],
   "Maraschino Cherry": ["Maraschino", "Cherry"],
   "London Dry Gin": ["Gin"],
+  "Vodka": [],
+  "Lillet Blanc Aperitif": ["Lillet Blanc", "Aperitif"],
 }
 
 export default ingredientToIngredientAliases
