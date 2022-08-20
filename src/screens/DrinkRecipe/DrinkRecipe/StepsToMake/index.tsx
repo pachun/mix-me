@@ -11,11 +11,37 @@ import type {
   GarnishDrinkRecipeIngredient,
 } from "types/DrinkRecipe"
 
+const decimalToFraction = (amount: number) => {
+  const decimalBit = amount % 1
+  const integerBit = amount - decimalBit
+
+  const decimalBitAsFraction = () => {
+    if (decimalBit === 0.25) {
+      return "1/4"
+    } else if (decimalBit === 0.5) {
+      return "1/2"
+    } else if (decimalBit === 0.75) {
+      return "3/4"
+    }
+    return ""
+  }
+
+  if (integerBit > 0 && decimalBit > 0) {
+    return `${integerBit} ${decimalBitAsFraction()}`
+  } else if (integerBit === 0) {
+    return decimalBitAsFraction()
+  } else if (decimalBit === 0) {
+    return integerBit
+  }
+}
+
 const formatMeasuredIngredient = (
   measuredIngredient: MeasuredDrinkRecipeIngredient,
 ) =>
   measuredIngredient.unit === "oz"
-    ? `${measuredIngredient.unitAmount} oz ${measuredIngredient.ingredient}`
+    ? `${decimalToFraction(measuredIngredient.unitAmount)} oz ${
+        measuredIngredient.ingredient
+      }`
     : `${pluralize(
         measuredIngredient.unit,
         measuredIngredient.unitAmount,
