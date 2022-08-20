@@ -12,6 +12,7 @@ const ingredientAliases = [
   "Cacao",
   "Lemon",
   "Curacao",
+  "Curaçao",
   "Edible Flower",
   "Flower Petal",
   "Flower Water",

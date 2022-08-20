@@ -48,7 +48,7 @@ const ladyInBlue: DrinkRecipe = {
   portionlessIngredients: [
     {
       type: DrinkRecipeIngredientType.Portionless,
-      ingredient: "Blue Curacao",
+      ingredient: "Blue Curaçao",
     },
   ],
   garnishIngredients: [

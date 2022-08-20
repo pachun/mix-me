@@ -13,7 +13,7 @@ const ingredients = [
   "Creme de Violette",
   "Lemon Juice",
   "Simple Syrup",
-  "Blue Curacao",
+  "Blue Curaçao",
   "Edible Flower Petal",
   "Orange Flower Water",
   "Club Soda",

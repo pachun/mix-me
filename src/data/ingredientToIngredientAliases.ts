@@ -15,7 +15,7 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Creme de Violette": ["Violette"],
   "Lemon Juice": ["Lemon"],
   "Simple Syrup": [],
-  "Blue Curacao": ["Curacao"],
+  "Blue Curaçao": ["Curacao", "Curaçao"],
   "Edible Flower Petal": ["Edible Flower", "Flower Petal"],
   "Orange Flower Water": ["Flower Water"],
   "Club Soda": ["Sparkling Water", "Seltzer", "Soda Water", "Fizzy Water"],
