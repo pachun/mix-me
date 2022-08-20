@@ -36,6 +36,8 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Grapefruit Soda": [],
   "Lime": [],
   "Salt": [],
+  "Triple Sec": [],
+  "Sugar": [],
 }
 
 export default ingredientToIngredientAliases

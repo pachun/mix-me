@@ -34,6 +34,8 @@ const ingredients = [
   "Grapefruit Soda",
   "Lime",
   "Salt",
+  "Triple Sec",
+  "Sugar",
 ] as const
 
 export default ingredients
