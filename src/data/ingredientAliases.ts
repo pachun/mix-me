@@ -22,6 +22,8 @@ const ingredientAliases = [
   "Aperitif",
   "Bitters",
   "Lime",
+  "Pimms",
+  "Pimm's",
 ] as const
 
 export default ingredientAliases

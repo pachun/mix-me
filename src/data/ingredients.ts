@@ -25,6 +25,11 @@ const ingredients = [
   "Angostura Bitters",
   "Lime Juice",
   "Pisco",
+  "Pimm's No.1",
+  "Ginger Ale",
+  "Cucumber",
+  "Mint",
+  "Strawberry",
 ] as const
 
 export default ingredients

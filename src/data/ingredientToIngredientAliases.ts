@@ -27,6 +27,11 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Angostura Bitters": ["Bitters"],
   "Lime Juice": ["Lime"],
   "Pisco": [],
+  "Pimm's No.1": ["Pimms", "Pimm's"],
+  "Ginger Ale": [],
+  "Cucumber": [],
+  "Mint": [],
+  "Strawberry": [],
 }
 
 export default ingredientToIngredientAliases
