@@ -38,6 +38,10 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Salt": [],
   "Triple Sec": [],
   "Sugar": [],
+  "Orange Liqueur": [],
+  "Dry Vermouth": ["Vermouth"],
+  "Olive Brine": ["Olive"],
+  "Green Olive": ["Olive"],
 }
 
 export default ingredientToIngredientAliases
