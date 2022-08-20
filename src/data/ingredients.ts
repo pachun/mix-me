@@ -22,6 +22,9 @@ const ingredients = [
   "London Dry Gin",
   "Vodka",
   "Lillet Blanc Aperitif",
+  "Angostura Bitters",
+  "Lime Juice",
+  "Pisco",
 ] as const
 
 export default ingredients
