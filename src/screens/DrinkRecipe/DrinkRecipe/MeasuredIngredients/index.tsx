@@ -1,4 +1,5 @@
 import { Text } from "react-native"
+import pluralize from "pluralize"
 
 import type { MeasuredDrinkRecipeIngredient } from "types/DrinkRecipe"
 
@@ -13,7 +14,13 @@ const MeasuredIngredients = ({
     <>
       {measuredIngredients.map((measuredIngredient, position) => (
         <Text key={position}>
-          {measuredIngredient.unitAmount} {measuredIngredient.unit}{" "}
+          {measuredIngredient.unit === "oz"
+            ? `${measuredIngredient.unitAmount} oz ${measuredIngredient.ingredient}`
+            : pluralize(
+                measuredIngredient.unit,
+                measuredIngredient.unitAmount,
+                true,
+              )}{" "}
           {measuredIngredient.ingredient}
           {measuredIngredient.alternates.length > 0
             ? ` (or ${measuredIngredient.alternates.join(", ")})`

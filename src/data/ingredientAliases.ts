@@ -8,6 +8,13 @@ const ingredientAliases = [
   "Seltzer",
   "Club Soda",
   "Fizzy Water",
+  "Violette",
+  "Cacao",
+  "Lemon",
+  "Curacao",
+  "Edible Flower",
+  "Flower Petal",
+  "Flower Water",
 ] as const
 
 export default ingredientAliases

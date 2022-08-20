@@ -14,7 +14,13 @@ import type {
 const formatMeasuredIngredient = (
   measuredIngredient: MeasuredDrinkRecipeIngredient,
 ) =>
-  `${measuredIngredient.unitAmount} ${measuredIngredient.unit} ${measuredIngredient.ingredient}`
+  measuredIngredient.unit === "oz"
+    ? `${measuredIngredient.unitAmount} oz ${measuredIngredient.ingredient}`
+    : `${pluralize(
+        measuredIngredient.unit,
+        measuredIngredient.unitAmount,
+        true,
+      )} ${measuredIngredient.ingredient}`
 
 const formatNumberedIngredient = (
   numberedIngredient: NumberedDrinkRecipeIngredient,
