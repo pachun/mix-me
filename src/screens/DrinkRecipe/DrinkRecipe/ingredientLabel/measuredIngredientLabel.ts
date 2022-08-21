@@ -35,8 +35,8 @@ const measuredIngredientLabel = (
       : measuredIngredient.unitAmount + " "
 
   const units =
-    measuredIngredient.unit === "oz"
-      ? "oz "
+    measuredIngredient.unit === ("oz" || "tsp")
+      ? `${measuredIngredient.unit} `
       : pluralize(measuredIngredient.unit, measuredIngredient.unitAmount) + " "
 
   const prefix = measuredIngredient.prefix

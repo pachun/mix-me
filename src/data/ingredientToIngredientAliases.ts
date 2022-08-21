@@ -51,6 +51,8 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Applejack": ["Apple Brandy"],
   "Apricot Liqueur": ["Apricot Brandy"],
   "Brandied Cherry": ["Cherry"],
+  "Creme de Mure": [],
+  "Blackberry": [],
 }
 
 export default ingredientToIngredientAliases

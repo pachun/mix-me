@@ -19,7 +19,7 @@ export enum DrinkRecipeIngredientType {
 export interface MeasuredDrinkRecipeIngredient {
   type: DrinkRecipeIngredientType.Measured
   ingredient: Ingredient
-  unit: "oz" | "Drop" | "Dash"
+  unit: "oz" | "tsp" | "Drop" | "Dash"
   unitAmount: number
   prefix?: string
   alternates: Ingredient[]
