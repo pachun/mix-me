@@ -46,13 +46,11 @@ const paloma: DrinkRecipe = {
     },
   ],
   stepsToMake: [
-    "Add %MI1, %MI2, %MI3 and %NI1 to a shaker with ice",
-    "Shake until well-chilled",
-    "Strain mix into a cup",
-    "Pour mix back into shaker",
-    "Dry shake (without ice)",
-    "Fine strain into chilled coupe glass",
-    "Garnish with light dusting of %GI1",
+    "Optionally: Rub a lime wedge around the edge of a highball glass and dip the rim in %GI2",
+    "Fill the highball glass with ice",
+    "Add %MI1 and %MI2 to the glass",
+    "Top with %PI1 and stir briefly to combine",
+    "Garnish with %GI1",
   ],
 }
 
