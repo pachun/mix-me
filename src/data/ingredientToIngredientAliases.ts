@@ -56,6 +56,7 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Coffee Liqueur": ["Kahlua", "Tia Maria"],
   "Baileys Irish Cream Liqueur": [],
   "Grand Marnier Liqueur": [],
+  "Green Chartreuse": [],
 }
 
 export default ingredientToIngredientAliases

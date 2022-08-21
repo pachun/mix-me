@@ -54,6 +54,9 @@ const ingredients = [
   "Coffee Liqueur",
   "Baileys Irish Cream Liqueur",
   "Grand Marnier Liqueur",
+  "Green Chartreuse",
+  "Maraschino Liqueur",
+  "Brandied Cherry",
 ] as const
 
 export default ingredients
