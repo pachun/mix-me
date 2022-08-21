@@ -63,10 +63,11 @@ const pimmsCup: DrinkRecipe = {
     },
   ],
   stepsToMake: [
-    "Add %MI1, %MI2, %MI3 and %NI1 to a shaker",
-    "Dry shake (without ice)",
-    "Strain into a chilled Nick & Nora glass",
-    "Garnish with 3 to 5 drops %GI1",
+    "Fill a highball glass with ice",
+    "Add %MI1 and %MI2 to the glass",
+    "Top with %PI1 and stir briefly to combine",
+    "Garnish with %GI1, %GI2 and %GI3",
+    "Optionally garnish with %GI4 and %GI5",
   ],
 }
 
