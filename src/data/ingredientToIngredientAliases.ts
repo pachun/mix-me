@@ -61,6 +61,7 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Cognac": [],
   "Raspberry": [],
   "Raspberry Syrup": ["Raspberry"],
+  "Demerara Sugar Syrup": ["Sugar Syrup"],
 }
 
 export default ingredientToIngredientAliases
