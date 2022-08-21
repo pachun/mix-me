@@ -44,6 +44,8 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Green Olive": ["Olive"],
   "Dark Rum": ["Rum"],
   "Ginger Beer": [],
+  "Heavy Cream": [],
+  "Flower Water": [],
 }
 
 export default ingredientToIngredientAliases
