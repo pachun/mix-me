@@ -2,7 +2,8 @@ import type { DrinkRecipe } from "types/DrinkRecipe"
 import { DrinkRecipeIngredientType } from "types/DrinkRecipe"
 
 const fakeImageUrl =
-  "https://www.acouplecooks.com/wp-content/uploads/2020/05/Between-the-Sheets-Cocktail-006.jpg"
+  "https://sf.ezoiccdn.com/ezoimgfmt/craftybartending.com/wp-content/uploads/2018/04/Daiquiri-Cocktail.jpg?ezimgfmt=ng:webp/ngcb1"
+
 const daquiri: DrinkRecipe = {
   name: "Daquiri",
   imageUrl: fakeImageUrl,
