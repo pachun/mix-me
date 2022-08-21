@@ -66,6 +66,7 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Grapefruit Juice": ["Grapefruit"],
   "Grapefruit": [],
   "Honey Syrup": ["Honey"],
+  "Orange Bitters": ["Bitters"],
 }
 
 export default ingredientToIngredientAliases
