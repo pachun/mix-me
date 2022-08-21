@@ -55,11 +55,8 @@ const ingredients = [
   "Baileys Irish Cream Liqueur",
   "Grand Marnier Liqueur",
   "Green Chartreuse",
-  "Maraschino Liqueur",
-  "Brandied Cherry",
   "Light Rum",
   "Cognac",
-  "Orange",
   "Raspberry",
   "Raspberry Syrup",
   "Demerara Sugar Syrup",
@@ -68,6 +65,10 @@ const ingredients = [
   "Grapefruit",
   "Honey Syrup",
   "Orange Bitters",
+  "Cherry",
+  "Orange Juice",
+  "Grenadine",
+  "Blanco Tequila",
 ] as const
 
 export default ingredients
