@@ -57,6 +57,10 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Baileys Irish Cream Liqueur": [],
   "Grand Marnier Liqueur": [],
   "Green Chartreuse": [],
+  "Light Rum": ["Rum"],
+  "Cognac": [],
+  "Raspberry": [],
+  "Raspberry Syrup": ["Raspberry"],
 }
 
 export default ingredientToIngredientAliases

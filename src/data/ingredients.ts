@@ -57,6 +57,11 @@ const ingredients = [
   "Green Chartreuse",
   "Maraschino Liqueur",
   "Brandied Cherry",
+  "Light Rum",
+  "Cognac",
+  "Orange",
+  "Raspberry",
+  "Raspberry Syrup",
 ] as const
 
 export default ingredients
