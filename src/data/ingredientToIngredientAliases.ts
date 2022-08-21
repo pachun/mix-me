@@ -46,6 +46,11 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Ginger Beer": [],
   "Heavy Cream": [],
   "Flower Water": [],
+  "Maraschino Liqueur": [],
+  "Orange Peel": [],
+  "Applejack": ["Apple Brandy"],
+  "Apricot Liqueur": ["Apricot Brandy"],
+  "Brandied Cherry": ["Cherry"],
 }
 
 export default ingredientToIngredientAliases
