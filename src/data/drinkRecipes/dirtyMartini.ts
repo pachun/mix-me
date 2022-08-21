@@ -37,6 +37,7 @@ const dirtyMartini: DrinkRecipe = {
       type: DrinkRecipeIngredientType.Numbered,
       ingredient: "Green Olive",
       amount: 3,
+      alternates: [],
     },
   ],
   stepsToMake: [

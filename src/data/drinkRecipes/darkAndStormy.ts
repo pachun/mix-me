@@ -24,6 +24,7 @@ const darkAndStormy: DrinkRecipe = {
     },
     {
       type: DrinkRecipeIngredientType.Measured,
+      prefix: "Chilled",
       ingredient: "Ginger Beer",
       unit: "oz",
       unitAmount: 5,
@@ -37,6 +38,7 @@ const darkAndStormy: DrinkRecipe = {
       type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Lime",
       suffix: "Wheel",
+      alternates: [],
     },
   ],
   stepsToMake: [

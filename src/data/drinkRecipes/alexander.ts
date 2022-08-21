@@ -35,6 +35,7 @@ const alexander: DrinkRecipe = {
       type: DrinkRecipeIngredientType.Numbered,
       amount: 1,
       ingredient: "Egg White",
+      alternates: [],
     },
   ],
   portionlessIngredients: [],
@@ -43,6 +44,7 @@ const alexander: DrinkRecipe = {
       type: DrinkRecipeIngredientType.Portionless,
       prefix: "Grated",
       ingredient: "Nutmeg",
+      alternates: [],
     },
   ],
   stepsToMake: [

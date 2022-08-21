@@ -2,10 +2,7 @@ import { Image, Text, View } from "react-native"
 
 import type { DrinkRecipe as DrinkRecipeType } from "types/DrinkRecipe"
 
-import MeasuredIngredients from "./MeasuredIngredients"
-import NumberedIngredients from "./NumberedIngredients"
-import PortionlessIngredients from "./PortionlessIngredients"
-import GarnishIngredients from "./GarnishIngredients"
+import ingredientLabel from "./ingredientLabel"
 import StepsToMake from "./StepsToMake"
 
 interface DrinkRecipeProps {
@@ -19,16 +16,19 @@ const DrinkRecipe = ({ drinkRecipe }: DrinkRecipeProps) => (
       source={{ uri: drinkRecipe.imageUrl }}
       style={{ width: 200, height: 200 }}
     />
-    <MeasuredIngredients
-      measuredIngredients={drinkRecipe.measuredIngredients}
-    />
-    <NumberedIngredients
-      numberedIngredients={drinkRecipe.numberedIngredients}
-    />
-    <PortionlessIngredients
-      portionlessIngredients={drinkRecipe.portionlessIngredients}
-    />
-    <GarnishIngredients garnishIngredients={drinkRecipe.garnishIngredients} />
+
+    {[
+      ...drinkRecipe.measuredIngredients,
+      ...drinkRecipe.numberedIngredients,
+      ...drinkRecipe.portionlessIngredients,
+    ].map((ingredient, position) => (
+      <Text key={position}>{ingredientLabel(ingredient)}</Text>
+    ))}
+
+    {drinkRecipe.garnishIngredients.map((garnishIngredient, position) => (
+      <Text key={position}>Garnish: {ingredientLabel(garnishIngredient)}</Text>
+    ))}
+
     <StepsToMake drinkRecipe={drinkRecipe} />
   </View>
 )

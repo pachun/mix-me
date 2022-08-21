@@ -35,6 +35,7 @@ const tomCollins: DrinkRecipe = {
     {
       type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Club Soda",
+      alternates: [],
     },
   ],
   garnishIngredients: [
@@ -42,10 +43,12 @@ const tomCollins: DrinkRecipe = {
       type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Lemon",
       suffix: "Wheel",
+      alternates: [],
     },
     {
       type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Maraschino Cherry",
+      alternates: [],
     },
   ],
   stepsToMake: [

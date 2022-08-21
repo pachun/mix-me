@@ -29,6 +29,7 @@ const americano: DrinkRecipe = {
       type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Soda Water",
       prefix: "Chilled",
+      alternates: [],
     },
   ],
   garnishIngredients: [
@@ -36,6 +37,7 @@ const americano: DrinkRecipe = {
       type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Orange",
       suffix: "Twist",
+      alternates: [],
     },
   ],
   stepsToMake: [

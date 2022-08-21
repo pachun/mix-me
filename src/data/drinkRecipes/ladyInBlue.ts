@@ -49,6 +49,7 @@ const ladyInBlue: DrinkRecipe = {
     {
       type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Blue Curaçao",
+      alternates: [],
     },
   ],
   garnishIngredients: [
@@ -56,6 +57,7 @@ const ladyInBlue: DrinkRecipe = {
       type: DrinkRecipeIngredientType.Numbered,
       ingredient: "Edible Flower Petal",
       amount: 5,
+      alternates: [],
     },
   ],
   stepsToMake: [

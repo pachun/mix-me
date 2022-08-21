@@ -43,6 +43,7 @@ const lemonDrop: DrinkRecipe = {
     {
       type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Sugar",
+      alternates: [],
     },
   ],
   stepsToMake: [

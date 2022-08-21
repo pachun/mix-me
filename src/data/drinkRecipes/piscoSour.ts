@@ -35,6 +35,7 @@ const piscoSour: DrinkRecipe = {
       type: DrinkRecipeIngredientType.Numbered,
       amount: 1,
       ingredient: "Egg White",
+      alternates: [],
     },
   ],
   portionlessIngredients: [],
@@ -42,6 +43,7 @@ const piscoSour: DrinkRecipe = {
     {
       type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Angostura Bitters",
+      alternates: [],
     },
   ],
   stepsToMake: [

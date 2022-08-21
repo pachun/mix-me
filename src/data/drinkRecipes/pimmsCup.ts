@@ -28,6 +28,7 @@ const pimmsCup: DrinkRecipe = {
     {
       type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Ginger Ale",
+      alternates: [],
     },
   ],
   garnishIngredients: [
@@ -35,25 +36,30 @@ const pimmsCup: DrinkRecipe = {
       type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Cucumber",
       suffix: "Slice",
+      alternates: [],
     },
     {
       type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Mint",
       suffix: "Sprig",
+      alternates: [],
     },
     {
       type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Strawberry",
+      alternates: [],
     },
     {
       type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Lemon",
       suffix: "Wheel",
+      alternates: [],
     },
     {
       type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Orange",
       suffix: "Wheel",
+      alternates: [],
     },
   ],
   stepsToMake: [

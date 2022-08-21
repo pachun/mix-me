@@ -6,7 +6,7 @@ export interface DrinkRecipe {
   measuredIngredients: MeasuredDrinkRecipeIngredient[]
   numberedIngredients: NumberedDrinkRecipeIngredient[]
   portionlessIngredients: PortionlessDrinkRecipeIngredient[]
-  garnishIngredients: GarnishDrinkRecipeIngredient[]
+  garnishIngredients: DrinkRecipeIngredient[]
   stepsToMake: string[]
 }
 
@@ -21,6 +21,7 @@ export interface MeasuredDrinkRecipeIngredient {
   ingredient: Ingredient
   unit: "oz" | "Drop"
   unitAmount: number
+  prefix?: string
   alternates: Ingredient[]
 }
 
@@ -28,6 +29,8 @@ export interface NumberedDrinkRecipeIngredient {
   type: DrinkRecipeIngredientType.Numbered
   ingredient: Ingredient
   amount: number
+  prefix?: string
+  alternates: Ingredient[]
 }
 
 export interface PortionlessDrinkRecipeIngredient {
@@ -35,9 +38,10 @@ export interface PortionlessDrinkRecipeIngredient {
   ingredient: Ingredient
   prefix?: string
   suffix?: string
+  alternates: Ingredient[]
 }
 
-export type GarnishDrinkRecipeIngredient =
+export type DrinkRecipeIngredient =
   | MeasuredDrinkRecipeIngredient
   | NumberedDrinkRecipeIngredient
   | PortionlessDrinkRecipeIngredient

@@ -37,6 +37,7 @@ const vesperMartini: DrinkRecipe = {
       type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Lemon",
       suffix: "Twist",
+      alternates: [],
     },
   ],
   stepsToMake: [

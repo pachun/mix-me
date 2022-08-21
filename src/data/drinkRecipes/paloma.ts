@@ -29,6 +29,7 @@ const paloma: DrinkRecipe = {
       type: DrinkRecipeIngredientType.Portionless,
       prefix: "Chilled",
       ingredient: "Grapefruit Soda",
+      alternates: [],
     },
   ],
   garnishIngredients: [
@@ -36,10 +37,12 @@ const paloma: DrinkRecipe = {
       type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Lime",
       suffix: "Wheel",
+      alternates: [],
     },
     {
       type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Salt",
+      alternates: [],
     },
   ],
   stepsToMake: [
