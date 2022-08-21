@@ -63,6 +63,10 @@ const ingredients = [
   "Raspberry",
   "Raspberry Syrup",
   "Demerara Sugar Syrup",
+  "Bourbon",
+  "Grapefruit Juice",
+  "Grapefruit",
+  "Honey Syrup",
 ] as const
 
 export default ingredients
