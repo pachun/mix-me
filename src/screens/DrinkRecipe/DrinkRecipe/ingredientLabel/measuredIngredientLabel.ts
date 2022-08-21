@@ -32,7 +32,7 @@ const measuredIngredientLabel = (
   const amount =
     measuredIngredient.unit === "oz"
       ? `${decimalToFraction(measuredIngredient.unitAmount)} `
-      : measuredIngredient.unitAmount
+      : measuredIngredient.unitAmount + " "
 
   const units =
     measuredIngredient.unit === "oz"
