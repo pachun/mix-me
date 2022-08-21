@@ -14,6 +14,7 @@ import dirtyMartini from "./dirtyMartini"
 import darkAndStormy from "./darkAndStormy"
 import ramosGinFizz from "./ramosGinFizz"
 import bramble from "./bramble"
+import b52 from "./b52"
 
 const alphabetically = (drinkRecipe1: DrinkRecipe, drinkRecipe2: DrinkRecipe) =>
   drinkRecipe1.name > drinkRecipe2.name ? 1 : -1
@@ -33,6 +34,7 @@ const drinkRecipes: DrinkRecipe[] = [
   darkAndStormy,
   ramosGinFizz,
   bramble,
+  b52,
 ].sort(alphabetically)
 
 export default drinkRecipes

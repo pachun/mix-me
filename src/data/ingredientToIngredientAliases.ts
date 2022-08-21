@@ -53,6 +53,9 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Brandied Cherry": ["Cherry"],
   "Creme de Mure": [],
   "Blackberry": [],
+  "Coffee Liqueur": ["Kahlua", "Tia Maria"],
+  "Baileys Irish Cream Liqueur": [],
+  "Grand Marnier Liqueur": [],
 }
 
 export default ingredientToIngredientAliases

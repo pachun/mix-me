@@ -13,6 +13,10 @@ const decimalToFraction = (amount: number) => {
       return "1/2"
     } else if (decimalBit === 0.75) {
       return "3/4"
+    } else if (decimalBit === 0.33) {
+      return "1/3"
+    } else if (decimalBit === 0.66) {
+      return "2/3"
     }
     return ""
   }
@@ -30,7 +34,7 @@ const measuredIngredientLabel = (
   measuredIngredient: MeasuredDrinkRecipeIngredient,
 ) => {
   const amount =
-    measuredIngredient.unit === "oz"
+    measuredIngredient.unit === ("oz" || "tsp")
       ? `${decimalToFraction(measuredIngredient.unitAmount)} `
       : measuredIngredient.unitAmount + " "
 
