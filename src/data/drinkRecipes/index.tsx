@@ -16,6 +16,14 @@ import ramosGinFizz from "./ramosGinFizz"
 import bramble from "./bramble"
 import b52 from "./b52"
 import theLastWord from "./theLastWord"
+import angelsFace from "./angelsFace"
+import aviation from "./aviation"
+import betweenTheSheets from "./betweenTheSheets"
+import brownDerby from "./brownDerby"
+import cloverClub from "./cloverClub"
+import daquiri from "./daquiri"
+import dryMartini from "./dryMartini"
+import tequilaSunrise from "./tequilaSunrise"
 
 const alphabetically = (drinkRecipe1: DrinkRecipe, drinkRecipe2: DrinkRecipe) =>
   drinkRecipe1.name > drinkRecipe2.name ? 1 : -1
@@ -37,6 +45,14 @@ const drinkRecipes: DrinkRecipe[] = [
   bramble,
   b52,
   theLastWord,
+  angelsFace,
+  aviation,
+  betweenTheSheets,
+  brownDerby,
+  cloverClub,
+  daquiri,
+  dryMartini,
+  tequilaSunrise,
 ].sort(alphabetically)
 
 export default drinkRecipes
