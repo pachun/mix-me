@@ -74,6 +74,11 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Cherry Liqueur": [],
   "Grand Marnier": [],
   "Pineapple Juice": [],
+  "Peach Schnapps": [],
+  "Chambord": [],
+  "Creme de Cassis": [],
+  "Cranberry Juice": [],
+  "Cocktail Umbrella": [],
 }
 
 export default ingredientToIngredientAliases
