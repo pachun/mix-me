@@ -35,7 +35,6 @@ const ingredientAliases = [
   "Sugar Syrup",
   "Grapefruit",
   "Honey",
-  "Bitters",
   "Tequila",
 ] as const
 
