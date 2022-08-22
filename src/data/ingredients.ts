@@ -79,6 +79,8 @@ const ingredients = [
   "Cocktail Umbrella",
   "Cream of Coconut",
   "Pineapple",
+  "White Rum",
+  "Mint Leaf",
 ] as const
 
 export default ingredients

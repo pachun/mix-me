@@ -81,6 +81,8 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Cocktail Umbrella": [],
   "Cream of Coconut": [],
   "Pineapple": [],
+  "White Rum": ["Rum"],
+  "Mint Leaf": ["Mint"],
 }
 
 export default ingredientToIngredientAliases
