@@ -52,7 +52,6 @@ const singaporeSling: DrinkRecipe = {
     },
     {
       type: DrinkRecipeIngredientType.Measured,
-      prefix: "",
       ingredient: "Angostura Bitters",
       unit: "Dash",
       unitAmount: 1,

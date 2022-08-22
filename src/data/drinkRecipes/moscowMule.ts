@@ -2,37 +2,32 @@ import type { DrinkRecipe } from "types/DrinkRecipe"
 import { DrinkRecipeIngredientType } from "types/DrinkRecipe"
 
 const fakeImageUrl =
-  "https://sipsfromscripts.com/wp-content/uploads/2020/08/Aviation-Cocktail-Recipe-SipsFromScripts.webp"
-const aviation: DrinkRecipe = {
-  name: "Aviation",
+  "https://delightfulmomfood.com/wp-content/uploads/2021/12/moscow-mule-ginger-beer-2.jpg"
+
+const moscowMule: DrinkRecipe = {
+  name: "Moscow Mule",
   imageUrl: fakeImageUrl,
   measuredIngredients: [
     {
       type: DrinkRecipeIngredientType.Measured,
-      ingredient: "Gin",
-      unit: "oz",
       unitAmount: 2,
+      unit: "oz",
+      ingredient: "Vodka",
       alternates: [],
     },
     {
       type: DrinkRecipeIngredientType.Measured,
-      ingredient: "Maraschino Liqueur",
-      unit: "oz",
       unitAmount: 0.5,
+      unit: "oz",
+      ingredient: "Lime Juice",
       alternates: [],
     },
     {
       type: DrinkRecipeIngredientType.Measured,
-      ingredient: "Creme de Violette",
+      unitAmount: 3,
       unit: "oz",
-      unitAmount: 0.25,
-      alternates: [],
-    },
-    {
-      type: DrinkRecipeIngredientType.Measured,
-      ingredient: "Lemon Juice",
-      unit: "oz",
-      unitAmount: 0.75,
+      prefix: "Chilled",
+      ingredient: "Ginger Beer",
       alternates: [],
     },
   ],
@@ -41,16 +36,17 @@ const aviation: DrinkRecipe = {
   garnishIngredients: [
     {
       type: DrinkRecipeIngredientType.Portionless,
-      ingredient: "Brandied Cherry",
+      ingredient: "Lime",
+      suffix: "Wheel",
       alternates: [],
     },
   ],
   stepsToMake: [
-    "Fill cocktail shaker half-full with ice",
-    "Add %MI1, %MI2, %MI3 and %MI4 to shaker. Shake until well-chilled",
-    "Strain into a cocktail glass",
+    "Fill a Moscow Mule mug (or highball glass) with ice",
+    "Add %MI1 and %MI2",
+    "Top with %MI3",
     "Garnish with a %GI1",
   ],
 }
 
-export default aviation
+export default moscowMule
