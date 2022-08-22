@@ -79,6 +79,8 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Creme de Cassis": [],
   "Cranberry Juice": [],
   "Cocktail Umbrella": [],
+  "Cream of Coconut": [],
+  "Pineapple": [],
 }
 
 export default ingredientToIngredientAliases
