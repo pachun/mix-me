@@ -4,6 +4,8 @@ import type { NativeStackScreenProps } from "@react-navigation/native-stack"
 
 import DrinkRecipeListItem from "./DrinkRecipeListItem"
 
+import intentionallyIncludes from "./intentionallyIncludes"
+
 import drinkRecipes from "data/drinkRecipes"
 import ingredients from "data/ingredients"
 import ingredientAliases from "data/ingredientAliases"
@@ -54,7 +56,7 @@ const DrinkRecipes = ({
   const ingredientAliasesIncludedInSearchedText = useMemo(
     () =>
       ingredientAliases.filter((ingredientAlias: IngredientAlias) =>
-        searchedText.toLowerCase().includes(ingredientAlias.toLowerCase()),
+        intentionallyIncludes(searchedText, ingredientAlias),
       ),
     [searchedText],
   )
@@ -75,7 +77,7 @@ const DrinkRecipes = ({
   const ingredientsIncludedInSearchedText = useMemo(
     () =>
       ingredients.filter(ingredient =>
-        searchedText.toLowerCase().includes(ingredient.toLowerCase()),
+        intentionallyIncludes(searchedText, ingredient),
       ),
     [searchedText],
   )

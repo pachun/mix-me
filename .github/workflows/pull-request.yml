@@ -52,3 +52,19 @@ jobs:
         run: yarn install
       - name: Check Prettier
         run: yarn prettier:check
+
+  test:
+    runs-on: ubuntu-latest
+    name: Test
+    steps:
+      - name: Checkout Mix Me
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14.x
+          cache: "yarn"
+      - name: Install Dependencies
+        run: yarn install
+      - name: Test
+        run: yarn test

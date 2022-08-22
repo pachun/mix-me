@@ -53,9 +53,25 @@ jobs:
       - name: Check Prettier
         run: yarn prettier:check
 
+  test:
+    runs-on: ubuntu-latest
+    name: Test
+    steps:
+      - name: Checkout Mix Me
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14.x
+          cache: "yarn"
+      - name: Install Dependencies
+        run: yarn install
+      - name: Test
+        run: yarn test
+
   # https://docs.expo.dev/eas-update/github-actions/
   deploy:
-    needs: [lint, type-check, check-prettier]
+    needs: [lint, type-check, check-prettier, test]
     name: Deploy
     runs-on: ubuntu-latest
     steps:
