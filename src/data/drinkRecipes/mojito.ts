@@ -60,10 +60,13 @@ const mojito: DrinkRecipe = {
     },
   ],
   stepsToMake: [
-    "Fill a Moscow Mule mug (or highball glass) with ice",
-    "Add %MI1 and %MI2",
-    "Top with %MI3",
-    "Garnish with a %GI1",
+    "Lightly muddle %NI1 with %MI2 in a shaker",
+    "Add %MI1, %MI3 and ice",
+    "Breifly shake",
+    "Fill a highball glass with ice",
+    "Strain shaker contents into the highball glass",
+    "Top with %PI1",
+    "Garnish with %GI1 and %GI2",
   ],
 }
 
