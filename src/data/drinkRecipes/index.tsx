@@ -24,6 +24,7 @@ import cloverClub from "./cloverClub"
 import daquiri from "./daquiri"
 import dryMartini from "./dryMartini"
 import tequilaSunrise from "./tequilaSunrise"
+import singaporeSling from "./singaporeSling"
 
 const alphabetically = (drinkRecipe1: DrinkRecipe, drinkRecipe2: DrinkRecipe) =>
   drinkRecipe1.name > drinkRecipe2.name ? 1 : -1
@@ -53,6 +54,7 @@ const drinkRecipes: DrinkRecipe[] = [
   daquiri,
   dryMartini,
   tequilaSunrise,
+  singaporeSling,
 ].sort(alphabetically)
 
 export default drinkRecipes

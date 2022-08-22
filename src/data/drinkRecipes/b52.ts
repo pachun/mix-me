@@ -24,7 +24,7 @@ const b52: DrinkRecipe = {
     },
     {
       type: DrinkRecipeIngredientType.Measured,
-      ingredient: "Grand Marnier Liqueur",
+      ingredient: "Grand Marnier",
       unit: "oz",
       unitAmount: 0.33,
       alternates: [],
