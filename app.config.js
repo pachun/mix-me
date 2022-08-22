@@ -56,4 +56,9 @@ export default {
   runtimeVersion: {
     policy: "sdkVersion",
   },
+  extra: {
+    eas: {
+      projectId: "6b860cd9-090b-4bb2-a1ac-b18bb3bea241",
+    },
+  },
 }
