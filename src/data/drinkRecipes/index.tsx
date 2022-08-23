@@ -41,6 +41,7 @@ import ginFizz from "./ginFizz"
 import maryPickford from "./maryPickford"
 import negroni from "./negroni"
 import oldFashioned from "./oldFashioned"
+import plantersPunch from "./plantersPunch"
 
 
 
@@ -89,6 +90,7 @@ const drinkRecipes: DrinkRecipe[] = [
   maryPickford,
   negroni,
   oldFashioned,
+  plantersPunch
 ].sort(alphabetically)
 
 export default drinkRecipes
