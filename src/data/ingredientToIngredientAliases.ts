@@ -83,6 +83,8 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Pineapple": [],
   "White Rum": ["Rum"],
   "Mint Leaf": ["Mint"],
+  "Champagne": [],
+  "Sparkling Wine": [],
 }
 
 export default ingredientToIngredientAliases

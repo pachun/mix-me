@@ -81,6 +81,8 @@ const ingredients = [
   "Pineapple",
   "White Rum",
   "Mint Leaf",
+  "Champagne",
+  "Sparkling Wine",
 ] as const
 
 export default ingredients
