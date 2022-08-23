@@ -37,6 +37,7 @@ const ingredientAliases = [
   "Honey",
   "Tequila",
   "Mint",
+  "Agave",
 ] as const
 
 export default ingredientAliases

@@ -85,6 +85,7 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Mint Leaf": ["Mint"],
   "Champagne": [],
   "Sparkling Wine": [],
+  "Agave Syrup": ["Agave"],
 }
 
 export default ingredientToIngredientAliases
