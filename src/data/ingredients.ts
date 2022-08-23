@@ -95,6 +95,10 @@ const ingredients = [
   "Egg",
   "Blackcurrant Liqueur",
   "Dry Champagne",
+  "Coffee",
+  "Whipped Cream",
+  "Brown Sugar",
+  "Irish Whiskey",
 ] as const
 
 export default ingredients

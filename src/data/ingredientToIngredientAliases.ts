@@ -97,6 +97,10 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Yellow Chartreuse": ["Chartreuse"],
   "Egg": [],
   "Dry Champagne": ["Champagne"],
+  "Coffee": [],
+  "Whipped Cream": [],
+  "Brown Sugar": ["Sugar"],
+  "Irish Whiskey": ["Whiskey"],
 }
 
 export default ingredientToIngredientAliases
