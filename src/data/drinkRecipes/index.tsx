@@ -45,6 +45,7 @@ import plantersPunch from "./plantersPunch"
 import portoFlip from "./portoFlip"
 import fitzgerald from "./fitzgerald"
 import kirRoyale from "./kirRoyale"
+import irishCoffee from "./irishCoffee"
 
 
 
@@ -97,6 +98,7 @@ const drinkRecipes: DrinkRecipe[] = [
   portoFlip,
   fitzgerald,
   kirRoyale,
+  irishCoffee,
 ].sort(alphabetically)
 
 export default drinkRecipes
