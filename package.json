@@ -15,7 +15,8 @@
     "lint": "eslint '**/*.{ts,tsx}' --max-warnings 0",
     "prettier": "prettier --write 'src/**/*.{ts,tsx}'",
     "prettier:check": "prettier --check 'src/**/*.{ts,tsx}'",
-    "test": "jest --passWithNoTests"
+    "test": "jest --passWithNoTests",
+    "check:all": "yarn tsc && yarn lint && yarn prettier:check && yarn test"
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.11",
