@@ -91,6 +91,7 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Silver Tequila": ["Tequila"],
   "Coke": [],
   "Rye Whiskey": ["Whiskey"],
+  "Water": [],
 }
 
 export default ingredientToIngredientAliases
