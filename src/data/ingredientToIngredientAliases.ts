@@ -88,6 +88,8 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Agave Syrup": ["Agave"],
   "Orange Curaçao": ["Curaçao", "Curacao"],
   "Orgeat": [],
+  "Silver Tequila": ["Tequila"],
+  "Coke": [],
 }
 
 export default ingredientToIngredientAliases

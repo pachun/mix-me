@@ -86,6 +86,8 @@ const ingredients = [
   "Agave Syrup",
   "Orange Curaçao",
   "Orgeat",
+  "Silver Tequila",
+  "Coke",
 ] as const
 
 export default ingredients
