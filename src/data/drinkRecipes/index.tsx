@@ -46,6 +46,7 @@ import portoFlip from "./portoFlip"
 import fitzgerald from "./fitzgerald"
 import kirRoyale from "./kirRoyale"
 import irishCoffee from "./irishCoffee"
+import pinkSquirrel from "./pinkSquirrel"
 
 const alphabetically = (drinkRecipe1: DrinkRecipe, drinkRecipe2: DrinkRecipe) =>
   drinkRecipe1.name > drinkRecipe2.name ? 1 : -1
@@ -97,6 +98,7 @@ const drinkRecipes: DrinkRecipe[] = [
   fitzgerald,
   kirRoyale,
   irishCoffee,
+  pinkSquirrel,
 ].sort(alphabetically)
 
 export default drinkRecipes

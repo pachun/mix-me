@@ -101,6 +101,7 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Whipped Cream": [],
   "Brown Sugar": ["Sugar"],
   "Irish Whiskey": ["Whiskey"],
+  "Creme de Noyaux": ["Almond Liqueur"],
 }
 
 export default ingredientToIngredientAliases

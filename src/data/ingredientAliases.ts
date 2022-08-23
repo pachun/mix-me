@@ -45,6 +45,7 @@ const ingredientAliases = [
   "Blackcurrant",
   "Champagne",
   "Sugar",
+  "Almond Liqueur",
 ] as const
 
 export default ingredientAliases

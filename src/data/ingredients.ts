@@ -99,6 +99,7 @@ const ingredients = [
   "Whipped Cream",
   "Brown Sugar",
   "Irish Whiskey",
+  "Creme de Noyaux",
 ] as const
 
 export default ingredients
