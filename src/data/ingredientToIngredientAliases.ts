@@ -76,7 +76,8 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Pineapple Juice": [],
   "Peach Schnapps": [],
   "Chambord": [],
-  "Creme de Cassis": [],
+  "Blackcurrant Liqueur": ["Blackcurrant"],
+  "Creme de Cassis": ["Blackcurrant Liqueur", "Blackcurrant"],
   "Cranberry Juice": [],
   "Cocktail Umbrella": [],
   "Cream of Coconut": [],
@@ -95,6 +96,7 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Ruby Port": ["Port"],
   "Yellow Chartreuse": ["Chartreuse"],
   "Egg": [],
+  "Dry Champagne": ["Champagne"],
 }
 
 export default ingredientToIngredientAliases

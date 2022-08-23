@@ -93,6 +93,8 @@ const ingredients = [
   "Ruby Port",
   "Yellow Chartreuse",
   "Egg",
+  "Blackcurrant Liqueur",
+  "Dry Champagne",
 ] as const
 
 export default ingredients
