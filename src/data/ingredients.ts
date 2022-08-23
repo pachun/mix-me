@@ -90,6 +90,9 @@ const ingredients = [
   "Coke",
   "Rye Whiskey",
   "Water",
+  "Ruby Port",
+  "Yellow Chartreuse",
+  "Egg",
 ] as const
 
 export default ingredients

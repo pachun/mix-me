@@ -55,7 +55,7 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Blackberry": [],
   "Coffee Liqueur": ["Kahlua", "Tia Maria"],
   "Baileys Irish Cream Liqueur": [],
-  "Green Chartreuse": [],
+  "Green Chartreuse": ["Chartreuse"],
   "Light Rum": ["Rum"],
   "Cognac": [],
   "Raspberry": [],
@@ -92,6 +92,9 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Coke": [],
   "Rye Whiskey": ["Whiskey"],
   "Water": [],
+  "Ruby Port": ["Port"],
+  "Yellow Chartreuse": ["Chartreuse"],
+  "Egg": [],
 }
 
 export default ingredientToIngredientAliases
