@@ -37,6 +37,7 @@ import margarita from "./margarita"
 import maiTai from "./maiTai"
 import longIslandIcedTea from "./longIslandIcedTea"
 import manhattan from "./manhattan"
+import ginFizz from "./ginFizz"
 
 const alphabetically = (drinkRecipe1: DrinkRecipe, drinkRecipe2: DrinkRecipe) =>
   drinkRecipe1.name > drinkRecipe2.name ? 1 : -1
@@ -79,6 +80,7 @@ const drinkRecipes: DrinkRecipe[] = [
   maiTai,
   longIslandIcedTea,
   manhattan,
+  ginFizz,
 ].sort(alphabetically)
 
 export default drinkRecipes
