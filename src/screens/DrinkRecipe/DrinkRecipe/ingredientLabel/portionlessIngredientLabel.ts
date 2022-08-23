@@ -13,7 +13,12 @@ const portionlessIngredientLabel = (
     ? " " + portionlessIngredient.suffix
     : ""
 
-  return prefix + ingredient + suffix
+  const alternates =
+    portionlessIngredient.alternates.length > 0
+      ? " (or " + portionlessIngredient.alternates.join(", ") + ")"
+      : ""
+
+  return prefix + ingredient + suffix + alternates
 }
 
 export default portionlessIngredientLabel
