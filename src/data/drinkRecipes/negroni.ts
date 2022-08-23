@@ -2,7 +2,7 @@ import type { DrinkRecipe } from "types/DrinkRecipe"
 import { DrinkRecipeIngredientType } from "types/DrinkRecipe"
 
 const fakeImageUrl =
-  "https://www.tasteofhome.com/wp-content/uploads/2019/04/Negroni-shutterstock_1084630808.jpg?fit=700,1024"
+  "https://assets-prd.punchdrink.com/wp-content/uploads/2013/10/22151938/Artice2-Kingston-Negroni-Rum-Cocktail-Recipe-500x688.jpg"
 
 const negroni: DrinkRecipe = {
   name: "Negroni",

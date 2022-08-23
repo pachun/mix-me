@@ -2,7 +2,7 @@ import type { DrinkRecipe } from "types/DrinkRecipe"
 import { DrinkRecipeIngredientType } from "types/DrinkRecipe"
 
 const fakeImageUrl =
-  "https://www.tasteofhome.com/wp-content/uploads/2019/04/Negroni-shutterstock_1084630808.jpg?fit=700,1024"
+  "https://www.liquor.com/thmb/p24WIerjbABYLEL94S5N7B0QQro=/735x0/__opt__aboutcom__coeus__resources__content_migration__liquor__2018__05__08113350__bourbon-old-fashioned-720x720-recipe-ade6f7780c304999be3577e565c9bcdd.jpg"
 
 const oldFashioned: DrinkRecipe = {
   name: "Old Fashioned",
