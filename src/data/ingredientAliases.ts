@@ -18,6 +18,7 @@ const ingredientAliases = [
   "Curaçao",
   "Edible Flower",
   "Egg",
+  "Eggs",
   "Fizzy Water",
   "Flower Petal",
   "Flower Water",
