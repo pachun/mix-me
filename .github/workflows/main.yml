@@ -69,10 +69,38 @@ jobs:
       - name: Test
         run: yarn test
 
-  # https://docs.expo.dev/eas-update/github-actions/
-  deploy:
+  web-deploy:
     needs: [lint, type-check, check-prettier, test]
-    name: Deploy
+    name: Web Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Mix Me
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14.x
+          cache: "yarn"
+      - name: Install Dependencies
+        run: yarn install
+      - name: Install Web Build Dependencies
+        run: npx expo install @expo/webpack-config@^0.17.0
+      - name: Create Production Web Build
+        run: npx expo export:web
+      - name: Deploy to Netlify
+        uses: jsmrcaga/action-netlify-deploy@master
+        with:
+          node_version: 14.20.0
+          build_command: npx expo export:web
+          build_directory: web-build
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_DEPLOY_TO_PROD: true
+
+  # https://docs.expo.dev/eas-update/github-actions/
+  mobile-deploy:
+    needs: [lint, type-check, check-prettier, test]
+    name: Mobile Deploy (iOS and Android)
     runs-on: ubuntu-latest
     steps:
       - name: Check for EXPO_TOKEN
