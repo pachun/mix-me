@@ -3,7 +3,7 @@ import type { IngredientToIngredientAliases } from "types/IngredientToIngredient
 const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Dry Gin": ["Gin"],
   "White Creme de Cacao": ["Cacao", "Creme"],
-  "Single Cream": ["Milk"],
+  "Single Cream": [],
   "Half-and-Half": ["Milk"],
   "Egg White": ["Egg", "Eggs"],
   "Nutmeg": [],
