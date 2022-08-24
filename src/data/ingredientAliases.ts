@@ -6,7 +6,6 @@ const ingredientAliases = [
   "Apricot Brandy",
   "Bitters",
   "Blackcurrant",
-  "Blackcurrant Liqueur",
   "Cacao",
   "Carbonated Water",
   "Champagne",
