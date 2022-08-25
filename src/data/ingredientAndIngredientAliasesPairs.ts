@@ -1,10 +1,10 @@
-import ingredientToIngredientAliases from "data/ingredientToIngredientAliases"
+import IngredientToSearchAliases from "data/IngredientToSearchAliases"
 
 import type { IngredientAndIngredientAliasesPair } from "types/IngredientAndIngredientAliasesPair"
 
 // TODO: remove 'as'. It sucks.
 const ingredientAndIngredientAliasesPairs = Object.entries(
-  ingredientToIngredientAliases,
+  IngredientToSearchAliases,
 ) as IngredientAndIngredientAliasesPair[]
 
 export default ingredientAndIngredientAliasesPairs

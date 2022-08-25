@@ -1,5 +1,5 @@
 import ingredientAliases from "data/ingredientAliases"
-import ingredientToIngredientAliases from "data/ingredientToIngredientAliases"
+import IngredientToSearchAliases from "data/IngredientToSearchAliases"
 
 const unique = (value: string, index: number, a: readonly string[]) =>
   a.indexOf(value) === index
@@ -16,7 +16,7 @@ describe("The Ingredient Alias List", () => {
   })
 
   it("has no unused values", () => {
-    const ingredientAliasesInUse = Object.values(ingredientToIngredientAliases)
+    const ingredientAliasesInUse = Object.values(IngredientToSearchAliases)
       .flat()
       .filter(unique)
 

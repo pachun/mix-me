@@ -1,6 +1,6 @@
-import type { IngredientToIngredientAliases } from "types/IngredientToIngredientAliases"
+import type { IngredientToSearchAliases } from "types/IngredientToSearchAliases"
 
-const ingredientToIngredientAliases: IngredientToIngredientAliases = {
+const IngredientToSearchAliases: IngredientToSearchAliases = {
   "Dry Gin": ["Gin"],
   "White Creme de Cacao": ["Cacao", "Creme"],
   "Single Cream": [],
@@ -142,4 +142,4 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Raspberry Liqueur": [],
 }
 
-export default ingredientToIngredientAliases
+export default IngredientToSearchAliases
