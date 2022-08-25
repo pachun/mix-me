@@ -47,6 +47,31 @@ import fitzgerald from "./fitzgerald"
 import kirRoyale from "./kirRoyale"
 import irishCoffee from "./irishCoffee"
 import pinkSquirrel from "./pinkSquirrel"
+import blackRussian from "./blackRussian"
+import caipirinha from "./caipirinha"
+import commodore from "./commodore"
+import corpseReviverNo2 from "./corpseReviverNo2"
+import cosmopolitan from "./cosmopolitan"
+import cubaLibre from "./cubaLibre"
+import deathInTheAfternoon from "./deathInTheAfternoon"
+import french75 from "./french75"
+import frenchConnection from "./frenchConnection"
+import gimlet from "./gimlet"
+import godfather from "./godfather"
+import goldenDream from "./goldenDream"
+import grasshopper from "./grasshopper"
+import harveyWallbanger from "./harveyWallbanger"
+import horsesNeck from "./horsesNeck"
+import kissTheGirl from "./kissTheGirl"
+import liquidLuck from "./liquidLuck"
+import nick from "./nick"
+import pinkPanther from "./pinkPanther"
+import rustyNail from "./rustyNail"
+import sazerac from "./sazerac"
+import screwdriver from "./screwdriver"
+import stinger from "./stinger"
+import whiteLady from "./whiteLady"
+import whiteRussian from "./whiteRussian"
 
 const alphabetically = (drinkRecipe1: DrinkRecipe, drinkRecipe2: DrinkRecipe) =>
   drinkRecipe1.name > drinkRecipe2.name ? 1 : -1
@@ -99,6 +124,31 @@ const drinkRecipes: DrinkRecipe[] = [
   kirRoyale,
   irishCoffee,
   pinkSquirrel,
+  blackRussian,
+  caipirinha,
+  commodore,
+  corpseReviverNo2,
+  cosmopolitan,
+  cubaLibre,
+  deathInTheAfternoon,
+  french75,
+  frenchConnection,
+  gimlet,
+  godfather,
+  goldenDream,
+  grasshopper,
+  harveyWallbanger,
+  horsesNeck,
+  kissTheGirl,
+  liquidLuck,
+  nick,
+  pinkPanther,
+  rustyNail,
+  sazerac,
+  screwdriver,
+  stinger,
+  whiteLady,
+  whiteRussian,
 ].sort(alphabetically)
 
 export default drinkRecipes
