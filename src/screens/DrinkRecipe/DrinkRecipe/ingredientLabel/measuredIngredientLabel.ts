@@ -50,8 +50,8 @@ const measuredIngredientLabel = (
   const ingredient = measuredIngredient.ingredient
 
   const alternates =
-    measuredIngredient.alternates.length > 0
-      ? ` (or ${measuredIngredient.alternates.join(", ")})`
+    measuredingredient.substitutes.length > 0
+      ? ` (or ${measuredingredient.substitutes.join(", ")})`
       : ""
 
   return amount + units + prefix + ingredient + alternates

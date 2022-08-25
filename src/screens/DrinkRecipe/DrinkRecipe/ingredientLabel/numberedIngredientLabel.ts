@@ -5,7 +5,7 @@ import type { NumberedDrinkRecipeIngredient } from "types/DrinkRecipe"
 const listedPluralizedAlternates = (
   numberedIngredient: NumberedDrinkRecipeIngredient,
 ) =>
-  numberedIngredient.alternates
+  numberedingredient.substitutes
     .map(alternate => pluralize(alternate, numberedIngredient.amount))
     .join(", ")
 
@@ -25,7 +25,7 @@ const numberedIngredientLabel = (
   )
 
   const alternates =
-    numberedIngredient.alternates.length > 0
+    numberedingredient.substitutes.length > 0
       ? ` (or ${listedPluralizedAlternates(numberedIngredient)})`
       : ""
 

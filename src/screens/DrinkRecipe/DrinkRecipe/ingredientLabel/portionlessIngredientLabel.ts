@@ -14,8 +14,8 @@ const portionlessIngredientLabel = (
     : ""
 
   const alternates =
-    portionlessIngredient.alternates.length > 0
-      ? " (or " + portionlessIngredient.alternates.join(", ") + ")"
+    portionlessingredient.substitutes.length > 0
+      ? " (or " + portionlessingredient.substitutes.join(", ") + ")"
       : ""
 
   return prefix + ingredient + suffix + alternates

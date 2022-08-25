@@ -29,19 +29,19 @@ const union = <T,>(list1: T[], list2: T[]): T[] => [
 const drinkRecipeIngredients = (drinkRecipe: DrinkRecipe): Ingredient[] => [
   ...drinkRecipe.measuredIngredients.flatMap(measuredIngredient => [
     measuredIngredient.ingredient,
-    ...measuredIngredient.alternates,
+    ...measuredingredient.substitutes,
   ]),
   ...drinkRecipe.numberedIngredients.flatMap(numberedIngredient => [
     numberedIngredient.ingredient,
-    ...numberedIngredient.alternates,
+    ...numberedingredient.substitutes,
   ]),
   ...drinkRecipe.portionlessIngredients.flatMap(portionlessIngredient => [
     portionlessIngredient.ingredient,
-    ...portionlessIngredient.alternates,
+    ...portionlessingredient.substitutes,
   ]),
   ...drinkRecipe.garnishIngredients.flatMap(garnishIngredient => [
     garnishIngredient.ingredient,
-    ...garnishIngredient.alternates,
+    ...garnishingredient.substitutes,
   ]),
 ]
 
