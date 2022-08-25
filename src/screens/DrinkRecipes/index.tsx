@@ -103,12 +103,38 @@ const DrinkRecipes = ({
     [searchedIngredients],
   )
 
+  const orderedSearchResults = useMemo(() => {
+    return drinkRecipesIncludingASearchedIngredient.sort(
+      (drinkRecipe1, drinkRecipe2) => {
+        const drinkRecipe1Ingredients = drinkRecipeIngredients(drinkRecipe1)
+        const drinkRecipe2Ingredients = drinkRecipeIngredients(drinkRecipe2)
+        const searchedIngredientsInDrinkRecipe1 = intersection(
+          drinkRecipe1Ingredients,
+          searchedIngredients,
+        )
+        const searchedIngredientsInDrinkRecipe2 = intersection(
+          drinkRecipe2Ingredients,
+          searchedIngredients,
+        )
+        const numberOfIngredientsMissingFromDrinkRecipe1 =
+          drinkRecipe1Ingredients.length -
+          searchedIngredientsInDrinkRecipe1.length
+        const numberOfIngredientsMissingFromDrinkRecipe2 =
+          drinkRecipe2Ingredients.length -
+          searchedIngredientsInDrinkRecipe2.length
+
+        return numberOfIngredientsMissingFromDrinkRecipe1 >
+          numberOfIngredientsMissingFromDrinkRecipe2
+          ? 1
+          : -1
+      },
+    )
+  }, [drinkRecipesIncludingASearchedIngredient, searchedIngredients])
+
   const displayedDrinkRecipes = useMemo(
     () =>
-      searchedText.length === 0
-        ? drinkRecipes
-        : drinkRecipesIncludingASearchedIngredient,
-    [searchedText, drinkRecipesIncludingASearchedIngredient],
+      searchedIngredients.length === 0 ? drinkRecipes : orderedSearchResults,
+    [searchedIngredients, orderedSearchResults],
   )
 
   return (
@@ -122,7 +148,10 @@ const DrinkRecipes = ({
         data={displayedDrinkRecipes}
         renderItem={({ item: drinkRecipe }) => (
           <TouchableOpacity onPress={showDrinkRecipe(drinkRecipe)}>
-            <DrinkRecipeListItem drinkRecipe={drinkRecipe} />
+            <DrinkRecipeListItem
+              drinkRecipe={drinkRecipe}
+              searchedIngredients={searchedIngredients}
+            />
           </TouchableOpacity>
         )}
       />
