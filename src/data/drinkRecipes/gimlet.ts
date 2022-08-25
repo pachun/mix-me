@@ -37,13 +37,14 @@ const gimlet: DrinkRecipe = {
       type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Lime",
       suffix: "Wheel",
-	  alternates: [],
+      alternates: [],
     },
   ],
   stepsToMake: [
     "Add the %MI1, %MI2 and %MI3 into a shaker with ice and shake until well-chilled.",  
 	"Strain into a chilled cocktail glass.",
 	"Garnish with a %GI1.",
+  ],
 }
 
 export default gimlet
