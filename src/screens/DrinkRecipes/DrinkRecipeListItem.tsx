@@ -8,27 +8,11 @@ import {
   View,
 } from "react-native"
 
+import drinkRecipeIngredients from "helpers/drinkRecipeIngredients"
+import missingIngredients from "helpers/missingIngredients"
+
 import type { DrinkRecipe } from "types/DrinkRecipe"
 import type { Ingredient } from "types/Ingredient"
-
-import { intersection } from "helpers/arrayHelpers"
-
-const getDrinkRecipeIngredients = (drinkRecipe: DrinkRecipe): Ingredient[] => {
-  return [
-    ...drinkRecipe.measuredIngredients.map(
-      measuredIngredient => measuredIngredient.ingredient,
-    ),
-    ...drinkRecipe.numberedIngredients.map(
-      numberedIngredient => numberedIngredient.ingredient,
-    ),
-    ...drinkRecipe.portionlessIngredients.map(
-      portionlessIngredient => portionlessIngredient.ingredient,
-    ),
-    ...drinkRecipe.garnishIngredients.map(
-      garnishIngredient => garnishIngredient.ingredient,
-    ),
-  ]
-}
 
 interface DrinkRecipeListItemProps {
   drinkRecipe: DrinkRecipe
@@ -39,16 +23,13 @@ const DrinkRecipeListItem = ({
   drinkRecipe,
   searchedIngredients,
 }: DrinkRecipeListItemProps) => {
-  const drinkRecipeIngredients = useMemo(
-    () => getDrinkRecipeIngredients(drinkRecipe),
-    [drinkRecipe],
-  )
-
   const numberOfMissingIngredients = useMemo(
     () =>
-      drinkRecipeIngredients.length -
-      intersection(drinkRecipeIngredients, searchedIngredients).length,
-    [drinkRecipeIngredients, searchedIngredients],
+      missingIngredients(
+        drinkRecipeIngredients(drinkRecipe),
+        searchedIngredients,
+      ).length,
+    [drinkRecipe, searchedIngredients],
   )
 
   const drinkRecipeIsASearchResult = useMemo(
