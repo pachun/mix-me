@@ -1,13 +1,11 @@
 import ingredientAliases from "data/ingredientAliases"
 import ingredientToIngredientAliases from "data/ingredientToIngredientAliases"
-
-const unique = (value: string, index: number, a: readonly string[]) =>
-  a.indexOf(value) === index
+import { unique } from "helpers/arrayHelpers"
 
 describe("The Ingredient Alias List", () => {
   it("only contains unique values", () => {
     expect(ingredientAliases.length).toEqual(
-      ingredientAliases.filter(unique).length,
+      [...ingredientAliases].filter(unique).length,
     )
   })
 

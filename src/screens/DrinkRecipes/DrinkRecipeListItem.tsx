@@ -11,8 +11,7 @@ import {
 import type { DrinkRecipe } from "types/DrinkRecipe"
 import type { Ingredient } from "types/Ingredient"
 
-const intersection = <T,>(list1: T[], list2: T[]): T[] =>
-  list1.filter(list1Item => list2.includes(list1Item))
+import { intersection } from "helpers/arrayHelpers"
 
 const getDrinkRecipeIngredients = (drinkRecipe: DrinkRecipe): Ingredient[] => {
   return [

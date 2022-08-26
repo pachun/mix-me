@@ -1,12 +1,10 @@
 import ingredients from "data/ingredients"
 import drinkRecipes from "data/drinkRecipes"
-
-const unique = (value: string, index: number, a: readonly string[]) =>
-  a.indexOf(value) === index
+import { unique } from "helpers/arrayHelpers"
 
 describe("The Ingredient List", () => {
   it("only contains unique values", () => {
-    expect(ingredients.length).toEqual(ingredients.filter(unique).length)
+    expect(ingredients.length).toEqual([...ingredients].filter(unique).length)
   })
 
   it("is in alphabetical order", () => {

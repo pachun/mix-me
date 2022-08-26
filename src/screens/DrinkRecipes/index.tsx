@@ -5,6 +5,7 @@ import type { NativeStackScreenProps } from "@react-navigation/native-stack"
 import DrinkRecipeListItem from "./DrinkRecipeListItem"
 
 import intentionallyIncludes from "./intentionallyIncludes"
+import { hasIntersection, intersection, union } from "helpers/arrayHelpers"
 
 import drinkRecipes from "data/drinkRecipes"
 import ingredients from "data/ingredients"
@@ -15,16 +16,6 @@ import type { Navigation } from "types/Navigation"
 import type { DrinkRecipe } from "types/DrinkRecipe"
 import type { IngredientAlias } from "types/IngredientAlias"
 import type { Ingredient } from "types/Ingredient"
-
-const intersection = <T,>(list1: T[], list2: T[]): T[] =>
-  list1.filter(list1Item => list2.includes(list1Item))
-
-const hasIntersection = <T,>(list1: T[], list2: T[]): boolean =>
-  intersection(list1, list2).length > 0
-
-const union = <T,>(list1: T[], list2: T[]): T[] => [
-  ...new Set([...list1, ...list2]),
-]
 
 const drinkRecipeIngredients = (drinkRecipe: DrinkRecipe): Ingredient[] => [
   ...drinkRecipe.measuredIngredients.flatMap(measuredIngredient => [
