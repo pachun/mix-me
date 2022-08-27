@@ -1,7 +1,8 @@
 import type { DrinkRecipe } from "types/DrinkRecipe"
 import { DrinkRecipeIngredientType } from "types/DrinkRecipe"
 
-const fakeImageUrl = ""
+const fakeImageUrl =
+  "https://www.liquor.com/thmb/eYFMOF0pFOCAcYozWhIO6sljQIE=/440x0/filters:no_upscale():max_bytes(150000):strip_icc()/pink-lady-720x720-primary-v2-80334dc275ca4c009799a0cf424d9a87.jpg"
 
 const pinkPanther: DrinkRecipe = {
   name: "Pink Panther",

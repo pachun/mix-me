@@ -1,7 +1,8 @@
 import type { DrinkRecipe } from "types/DrinkRecipe"
 import { DrinkRecipeIngredientType } from "types/DrinkRecipe"
 
-const fakeImageUrl = ""
+const fakeImageUrl =
+  "https://tipsybartender.com/wp-content/uploads/2018/01/The-Little-Mermaid.jpg?fit=crop&ar=1:1"
 
 const kissTheGirl: DrinkRecipe = {
   name: "Kiss the Girl",
