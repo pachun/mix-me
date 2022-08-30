@@ -140,6 +140,7 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Citron Vodka": ["Vodka"],
   "Cointreau": [],
   "Raspberry Liqueur": [],
+  "Blackcurrant": [],
 }
 
 export default ingredientToIngredientAliases
