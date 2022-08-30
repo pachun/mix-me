@@ -8,6 +8,7 @@ const ingredients = [
   "Baileys Irish Cream Liqueur",
   "Benedictine",
   "Blackberry",
+  "Blackcurrant",
   "Blanco Tequila",
   "Blended Scotch",
   "Blue Curaçao",
