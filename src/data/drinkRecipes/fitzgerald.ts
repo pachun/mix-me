@@ -2,7 +2,7 @@ import type { DrinkRecipe } from "types/DrinkRecipe"
 import { DrinkRecipeIngredientType } from "types/DrinkRecipe"
 
 const fakeImageUrl =
-  "https://www.instagram.com/p/ChiG2gwPhp5/?igshid=MDJmNzVkMjY="
+  "https://i.pinimg.com/originals/11/77/ba/1177ba7a2331fd1d677b311280940080.jpg"
 
 const fitzgerald: DrinkRecipe = {
   name: "Fitzgerald",
