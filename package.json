@@ -12,9 +12,9 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "tsc": "tsc",
-    "lint": "eslint '**/*.{ts,tsx}' --max-warnings 0",
-    "prettier": "prettier --write 'src/**/*.{ts,tsx}'",
-    "prettier:check": "prettier --check 'src/**/*.{ts,tsx}'",
+    "lint": "eslint \"**/*.{ts,tsx}\" --max-warnings 0",
+    "prettier": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "prettier:check": "prettier --check \"src/**/*.{ts,tsx}\"",
     "test": "jest --passWithNoTests",
     "check:all": "yarn tsc && yarn lint && yarn prettier:check && yarn test"
   },
