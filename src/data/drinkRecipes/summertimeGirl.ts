@@ -1,7 +1,8 @@
 import type { DrinkRecipe } from "types/DrinkRecipe"
 import { DrinkRecipeIngredientType } from "types/DrinkRecipe"
 
-const fakeImageUrl = ""
+const fakeImageUrl =
+  "https://www.barbizmag.com/wp-content/uploads/2018/12/CasaRoyale-696x451.jpg"
 
 const summertimeGirl: DrinkRecipe = {
   name: "Summertime Girl",
@@ -25,14 +26,14 @@ const summertimeGirl: DrinkRecipe = {
       type: DrinkRecipeIngredientType.Measured,
       ingredient: "Lemon Juice",
       unit: "oz",
-      unitAmount: 1,
+      unitAmount: 1.0,
       alternates: [],
     },
     {
       type: DrinkRecipeIngredientType.Measured,
       ingredient: "Simple Syrup",
       unit: "oz",
-      unitAmount: 1,
+      unitAmount: 1.0,
       alternates: [],
     },
     {
@@ -48,7 +49,7 @@ const summertimeGirl: DrinkRecipe = {
   garnishIngredients: [
     {
       type: DrinkRecipeIngredientType.Portionless,
-      ingredient: "Blackberry",
+      ingredient: "Blackcurrant",
       alternates: [],
     },
   ],
