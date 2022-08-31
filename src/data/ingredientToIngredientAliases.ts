@@ -143,6 +143,8 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Blackcurrant": [],
   "Apple": [],
   "Maple Syrup": [],
+  "Dubonnet Rouge Grand Aperitif": [],
+  "Lavender": [],
 }
 
 export default ingredientToIngredientAliases
