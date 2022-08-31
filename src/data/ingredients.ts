@@ -78,6 +78,7 @@ const ingredients = [
   "Lime Juice",
   "London Dry Gin",
   "Manzanilla Sherry",
+  "Maple Syrup",
   "Maraschino Cherry",
   "Maraschino Liqueur",
   "Mint",
