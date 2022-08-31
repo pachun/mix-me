@@ -23,16 +23,14 @@ const saltyDog: DrinkRecipe = {
       alternates: [],
     },
   ],
-  numberedIngredients: [
+  numberedIngredients: [],
+  portionlessIngredients: [
     {
-      type: DrinkRecipeIngredientType.Numbered,
+      type: DrinkRecipeIngredientType.Portionless,
       ingredient: "Grapefruit",
       suffix: "Slice",
-      amount: 1.0,
       alternates: [],
     },
-  ],
-  portionlessIngredients: [
     {
       type: DrinkRecipeIngredientType.Portionless,
       prefix: "Kosher",

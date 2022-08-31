@@ -31,8 +31,7 @@ const applejackRabbit: DrinkRecipe = {
     },
     {
       type: DrinkRecipeIngredientType.Measured,
-      ingredient: "Maple Syrup",
-      suffix: "Grade B",
+      ingredient: "Maple Syrup Grade B",
       unit: "oz",
       unitAmount: 0.5,
       alternates: [],

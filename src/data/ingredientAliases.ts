@@ -51,6 +51,7 @@ const ingredientAliases = [
   "Sparkling Wine",
   "Sugar",
   "Sugar Syrup",
+  "Syrup",
   "Tequila",
   "Tia Maria",
   "Vermouth",
