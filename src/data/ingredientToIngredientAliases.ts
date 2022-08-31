@@ -147,6 +147,7 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Lavender": [],
   "Amaro Liqueur": [],
   "Aperol": [],
+  "Basil": [],
 }
 
 export default ingredientToIngredientAliases

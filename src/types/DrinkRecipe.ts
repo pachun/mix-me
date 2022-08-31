@@ -31,6 +31,7 @@ export interface NumberedDrinkRecipeIngredient {
   ingredient: Ingredient
   amount: number
   prefix?: string
+  suffix?: string
   alternates: Ingredient[]
 }
 

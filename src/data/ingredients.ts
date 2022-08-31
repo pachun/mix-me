@@ -9,6 +9,7 @@ const ingredients = [
   "Applejack",
   "Apricot Liqueur",
   "Baileys Irish Cream Liqueur",
+  "Basil",
   "Benedictine",
   "Blackberry",
   "Blackcurrant",
