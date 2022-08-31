@@ -3,6 +3,7 @@ const ingredients = [
   "Agave Syrup",
   "Amaretto Liqueur",
   "Angostura Bitters",
+  "Apple",
   "Applejack",
   "Apricot Liqueur",
   "Baileys Irish Cream Liqueur",
