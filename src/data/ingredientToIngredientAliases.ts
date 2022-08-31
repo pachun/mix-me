@@ -142,12 +142,13 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Raspberry Liqueur": [],
   "Blackcurrant": [],
   "Apple": [],
-  "Maple Syrup": [],
+  "Maple Syrup Grade A": ["Syrup"],
+  "Maple Syrup Grade B": ["Syrup"],
   "Dubonnet Rouge Grand Aperitif": [],
   "Lavender": [],
   "Amaro Liqueur": [],
   "Aperol": [],
-  "Basil": [],
+  "Basil Leaf": [],
 }
 
 export default ingredientToIngredientAliases

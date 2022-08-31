@@ -39,8 +39,7 @@ const strawberryKiss: DrinkRecipe = {
     },
     {
       type: DrinkRecipeIngredientType.Numbered,
-      ingredient: "Basil",
-      suffix: "Leaf",
+      ingredient: "Basil Leaf",
       amount: 6,
       alternates: [],
     },
