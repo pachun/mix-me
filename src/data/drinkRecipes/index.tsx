@@ -81,6 +81,7 @@ import paperPlane from "./paperPlane"
 import strawberryKiss from "./strawberryKiss"
 import oldPal from "./oldPal"
 import saltyDog from "./saltyDog"
+import oldVermont from "./oldVermont"
 
 const alphabetically = (drinkRecipe1: DrinkRecipe, drinkRecipe2: DrinkRecipe) =>
   drinkRecipe1.name > drinkRecipe2.name ? 1 : -1
@@ -167,6 +168,7 @@ const drinkRecipes: DrinkRecipe[] = [
   strawberryKiss,
   oldPal,
   saltyDog,
+  oldVermont,
 ].sort(alphabetically)
 
 export default drinkRecipes
