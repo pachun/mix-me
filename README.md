@@ -43,14 +43,6 @@ yarn lint
 yarn tsc
 ```
 
-### View Coverage Report
-
-[Test](#Test)
-
-```sh
-open coverage/lcov-report/index.html
-```
-
 ### Build & Deploy
 
 We use [EAS](https://docs.expo.dev/eas/).
