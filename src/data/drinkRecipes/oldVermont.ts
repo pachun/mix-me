@@ -20,8 +20,7 @@ const oldVermont: DrinkRecipe = {
       unitAmount: 0.5,
       unit: "oz",
       prefix: "Vermont",
-      ingredient: "Maple Syrup",
-      suffix: "Grade A",
+      ingredient: "Maple Syrup Grade A",
       alternates: [],
     },
     {
