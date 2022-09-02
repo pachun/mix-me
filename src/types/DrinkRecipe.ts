@@ -22,6 +22,7 @@ export interface MeasuredDrinkRecipeIngredient {
   unit: "oz" | "tsp" | "Drop" | "Dash" | "Tbsp" | "Barspoon" | "Cup"
   unitAmount: number
   prefix?: string
+  suffix?: string
   alternates: Ingredient[]
 }
 
@@ -30,6 +31,7 @@ export interface NumberedDrinkRecipeIngredient {
   ingredient: Ingredient
   amount: number
   prefix?: string
+  suffix?: string
   alternates: Ingredient[]
 }
 

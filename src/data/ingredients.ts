@@ -9,7 +9,11 @@ const ingredients = [
   "Applejack",
   "Apricot Liqueur",
   "Baileys Irish Cream Liqueur",
+<<<<<<< HEAD
   "Basil Leaf",
+=======
+  "Basil",
+>>>>>>> 173513ac60f34f202ca5d6ebe116363069c7e911
   "Benedictine",
   "Blackberry",
   "Blackcurrant",
@@ -83,8 +87,12 @@ const ingredients = [
   "Lime Juice",
   "London Dry Gin",
   "Manzanilla Sherry",
+<<<<<<< HEAD
   "Maple Syrup Grade A",
   "Maple Syrup Grade B",
+=======
+  "Maple Syrup",
+>>>>>>> 173513ac60f34f202ca5d6ebe116363069c7e911
   "Maraschino Cherry",
   "Maraschino Liqueur",
   "Mint",
