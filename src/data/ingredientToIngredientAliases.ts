@@ -149,6 +149,8 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Amaro Liqueur": [],
   "Aperol": [],
   "Basil Leaf": [],
+  "Apple Brandy": [],
+  "Pumpkin Ale": [],
 }
 
 export default ingredientToIngredientAliases
