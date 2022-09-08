@@ -151,6 +151,9 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Basil Leaf": [],
   "Apple Brandy": [],
   "Pumpkin Ale": [],
+  "Pumpkin Purée": [],
+  "Boiling Water": [],
+  "Cinnamon": [],
 }
 
 export default ingredientToIngredientAliases
