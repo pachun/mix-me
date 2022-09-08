@@ -5,7 +5,7 @@ const fakeImageUrl =
   "https://cocktail-society.com/wp-content/uploads/2021/10/Planters-Punch.jpg"
 
 const plantersPunch: DrinkRecipe = {
-  name: "Old Fashioned",
+  name: "Planter's Punch",
   imageUrl: fakeImageUrl,
   measuredIngredients: [
     {
