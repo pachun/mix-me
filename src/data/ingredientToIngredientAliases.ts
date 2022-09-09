@@ -161,6 +161,10 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Hard Apple Cider": [],
   "Dry Alsatian Riesling": [],
   "Star Anise Pod": [],
+  "Ginger": [],
+  "Whole Cloves": [],
+  "Cardamom Pod": [],
+  "Vanilla Bean": [],
 }
 
 export default ingredientToIngredientAliases
