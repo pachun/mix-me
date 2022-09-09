@@ -157,6 +157,8 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Pumpkin Syrup": [],
   "Brandy": [],
   "Apple Cider": [],
+  "Pear Brandy": [],
+  "Hard Apple Cider": [],
 }
 
 export default ingredientToIngredientAliases

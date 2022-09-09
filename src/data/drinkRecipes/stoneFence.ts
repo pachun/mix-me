@@ -12,7 +12,7 @@ const stoneFence: DrinkRecipe = {
       type: DrinkRecipeIngredientType.Measured,
       ingredient: "Rye Whiskey",
       unit: "oz",
-      unitAmount: 0.0,
+      unitAmount: 2.0,
       alternates: ["Bourbon", "Rum", "Brandy"],
     },
     {
