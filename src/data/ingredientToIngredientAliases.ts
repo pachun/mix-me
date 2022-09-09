@@ -155,6 +155,8 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Boiling Water": [],
   "Cinnamon": [],
   "Pumpkin Syrup": [],
+  "Brandy": [],
+  "Apple Cider": [],
 }
 
 export default ingredientToIngredientAliases
