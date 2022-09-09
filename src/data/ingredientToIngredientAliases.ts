@@ -155,6 +155,21 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Boiling Water": [],
   "Cinnamon": [],
   "Pumpkin Syrup": [],
+  "Brandy": [],
+  "Apple Cider": [],
+  "Pear Brandy": [],
+  "Hard Apple Cider": [],
+  "Dry Alsatian Riesling": [],
+  "Star Anise Pod": [],
+  "Ginger": [],
+  "Whole Cloves": [],
+  "Cardamom Pod": [],
+  "Vanilla Bean": [],
+  "Maple": [],
+  "Pear": [],
+  "Allspice": [],
+  "Apple Bitters": [],
+  "Amontillado Sherry": [],
 }
 
 export default ingredientToIngredientAliases
