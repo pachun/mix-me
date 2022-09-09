@@ -165,6 +165,11 @@ const ingredientToIngredientAliases: IngredientToIngredientAliases = {
   "Whole Cloves": [],
   "Cardamom Pod": [],
   "Vanilla Bean": [],
+  "Maple": [],
+  "Pear": [],
+  "Allspice": [],
+  "Apple Bitters": [],
+  "Amontillado Sherry": [],
 }
 
 export default ingredientToIngredientAliases
