@@ -4,6 +4,10 @@
 
 Mix Me is an iOS and Android app which shows you the recipes of the mixed drinks that you can make at home with the ingredients that you already have.
 
+It runs on iOS, Android, and [the web](https://mix-me.netlify.app).
+
+[Check out the web app here](https://mix-me.netlify.app)!
+
 ### Install
 
 ```sh
